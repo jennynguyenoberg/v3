@@ -1,5 +1,5 @@
-import styles from '@/styles/home.module.css'
+import styles from './blog.module.css'
 
 export default function Blog() {
-  return <h1 className={styles.home}>Blog page</h1>
+  return <h1 className={styles.main}>Blog page</h1>
 }

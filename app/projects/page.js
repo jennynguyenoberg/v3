@@ -1,5 +1,5 @@
-import styles from '@/styles/home.module.css'
+import styles from './projects.module.css'
 
 export default function Projects() {
-  return <h1 className={styles.home}>Projects page</h1>
+  return <h1 className={styles.main}>Projects page</h1>
 }

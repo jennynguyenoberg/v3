@@ -1,5 +1,5 @@
-import styles from '@/styles/home.module.css'
+import styles from './about.module.css'
 
 export default function About() {
-  return <h1 className={styles.home}>About page</h1>
+  return <h1 className={styles.main}>About page</h1>
 }
