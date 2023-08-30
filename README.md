@@ -1,34 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <img alt="Logo" src="https://github.com/jennynguyenoberg/swipe-north-team1/assets/116844306/63bcd2b9-eb54-4898-be8c-487f19a208ec" width="80" />
+</div>
+<br>
+<h1 align="center">
+  <a href="https://jennynguyenoberg.com" target="_blank">jennynguyenoberg.com</a>
+</h1>
+<p align="center">
+  The third iteration of my portfolio site <a href="https://jennynguyenoberg.com" target="_blank">jennynguyenoberg.com</a> built with <a href="https://nextjs.org/" target="_blank">Next.js</a> and hosted with <a href="https://vercel.com/" target="_blank">Vercel</a>
+</p>
+<p align="center">
+  Previous iterations:
+  <a href="https://github.com/jennynguyenoberg/jennys-portfolio-2.0">v1</a>,
+  <a href="https://github.com/jennynguyenoberg/assignment5-javascript-frameworks" target="_blank">v2</a>
+</p>
 
-## Getting Started
 
-First, run the development server:
+![Image of portfolio website]()
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Getting started
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Install required packages
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+   ```sh
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. Start the development server
 
-## Learn More
+   ```sh
+   npm run dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+## Color Palette
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+| Color          | Hex                                                                |
+| -------------- | ------------------------------------------------------------------ |
+| Charcoal       | ![#242321](https://via.placeholder.com/10/242321?text=+) `#242321` |
+| Beige          | ![#D4D2BD](https://via.placeholder.com/10/D4D2BD?text=+) `#D4D2BD` |
+| Purple         | ![#8B80E5](https://via.placeholder.com/10/8B80E5?text=+) `#8B80E5` |
+| Light Blue     | ![#B7E0E6](https://via.placeholder.com/10/B7E0E6?text=+) `#B7E0E6` |
+| White          | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) `#ffffff` |
