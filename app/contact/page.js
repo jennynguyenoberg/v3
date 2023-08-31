@@ -1,5 +1,11 @@
 import styles from './contact.module.css'
 
 export default function Contact() {
-  return <h1 className={styles.main}>Contact page</h1>
+  return (
+    <>
+      <div id="contact" className={styles.main}>
+        <h1>Contact section</h1>
+      </div>
+    </>
+  );
 }

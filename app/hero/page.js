@@ -1,5 +1,11 @@
 import styles from './hero.module.css'
 
 export default function Hero() {
-  return <h1 className={styles.main}>Hero page</h1>
+  return (
+    <>
+      <div id="hero" className={styles.main}>
+        <h1>Hero section</h1>
+      </div>
+    </>
+  );
 }

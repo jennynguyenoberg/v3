@@ -1,5 +1,11 @@
 import styles from './projects.module.css'
 
 export default function Projects() {
-  return <h1 className={styles.main}>Projects page</h1>
+  return (
+    <>
+      <div id="projects" className={styles.main}>
+        <h1>Projects section</h1>
+      </div>
+    </>
+  );
 }
