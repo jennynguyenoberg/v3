@@ -18,27 +18,11 @@ export default function Navigation() {
           <Link activeClass="active" to="projects" spy={true} smooth={true} offset={0} duration={500}>Projects</Link>
         </li>
         <li>
-          <Link activeClass="active" to="blog" spy={true} smooth={true} offset={0} duration={500}>Blog</Link>
-        </li>
-        <li>
           <Link activeClass="active" to="contact" spy={true} smooth={true} offset={0} duration={500}>Contact</Link>
         </li>
-        
-        {/* <Link href="/">
-          <li>Home</li>
-        </Link>
-        <Link href="#about">
-          <li>About</li>
-        </Link>
-        <Link href="#projects">
-          <li>Projects</li>
-        </Link>
-        <Link href="#blog">
-          <li>Blog</li>
-        </Link>
-        <Link href="#contact">
-          <li>Contact</li>
-        </Link> */}
+        <li>
+          <a href="https://assignment2-blog.vercel.app/">Blog</a>
+        </li>
       </ul>
     </div>
   );

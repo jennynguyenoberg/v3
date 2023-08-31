@@ -2,4 +2,5 @@
   background-color: black;
   display: flex;
   position: fixed;
+  cursor: pointer;
 }
