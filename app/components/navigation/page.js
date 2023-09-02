@@ -21,7 +21,7 @@ export default function Navigation() {
           <Link activeClass="active" to="contact" spy={true} smooth={true} offset={0} duration={500}>Contact</Link>
         </li>
         <li>
-          <a href="https://assignment2-blog.vercel.app/">Blog</a>
+          <a href="https://blog.jennynguyenoberg.com">Blog</a>
         </li>
       </ul>
     </div>
