@@ -1,7 +1,6 @@
 <div align="center">
   <img alt="Logo" src="https://github.com/jennynguyenoberg/swipe-north-team1/assets/116844306/63bcd2b9-eb54-4898-be8c-487f19a208ec" width="80" />
 </div>
-<br>
 <h1 align="center">
   <a href="https://jennynguyenoberg.com" target="_blank">jennynguyenoberg.com</a>
 </h1>
