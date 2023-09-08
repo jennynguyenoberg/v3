@@ -1,4 +1,21 @@
-.main {
-  background-color: lavender;
-  height: 100vh;
+.container {
+  margin: 0 9.5em;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    margin: 0 5em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 0 2em;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .container {
+    margin: 0 2em;
+  }
 }

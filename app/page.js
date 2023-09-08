@@ -5,17 +5,18 @@ import Projects from './projects/page'
 // import Blog from './blog/page'
 import Contact from './contact/page'
 import Footer from './components/footer/page'
+import styles from '../styles/home.module.css'
 
 export default function Home() {
   return (
     <>
-      <Navigation />
-      <Hero />
-      <About />
-      <Projects />
-      {/* <Blog /> */}
-      <Contact />
-      <Footer />
+      <div className={styles.container}><Navigation /></div>
+        <Hero />
+        <About />
+        <Projects />
+        {/* <Blog /> */}
+        <Contact />
+        <Footer />
     </>
   );
 }

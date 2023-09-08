@@ -1,6 +1,98 @@
-.main {
-  background-color: black;
+.navbar {
   display: flex;
-  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+  position: relative;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  list-style: none;
   cursor: pointer;
+}
+
+.logoContainer:hover {
+  animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    both;
+}
+
+.menuContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.navbar.open .navbar-items {
+  opacity: 1;
+}
+
+.navbar-items li {
+  text-align: right;
+  padding: 4px 0;
+}
+
+.navbar-items.open {
+  background: transparent;
+  z-index: 1;
+  margin-top: 15px;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  transition: opacity 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.logoutButton {
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+/* --- Hamburger menu --- */
+
+.menu-icon {
+  cursor: pointer;
+  display: flex;
+  transition: all 0.8s ease;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20px;
+  height: 11px;
+  z-index: 1;
+}
+
+.menu-icon div.bar {
+  width: 15px;
+  height: 1.5px;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+
+/* --- Hamburger menu animation --- */
+
+.menu-icon.open div.bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.open div.bar:first-child {
+  transform: translateY(6px) rotate(90deg);
+}
+
+.menu-icon.open div.bar:last-child {
+  transform: translateY(-3px) rotate(-180deg);
+}
+
+@keyframes rotate-vert-center {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
 }
