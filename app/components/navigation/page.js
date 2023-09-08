@@ -1,5 +1,4 @@
 'use client';
-import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import styles from './navigation.module.css';
 import classNames from 'classnames';
@@ -9,27 +8,23 @@ import { useState, useEffect } from 'react';
 export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
   const [shouldCloseMenu, setShouldCloseMenu] = useState(false);
-  let pathname = usePathname() || '/';
-  if (pathname.includes('/blog/')) {
-    pathname = '/blog';
-  }
 
   const navItems = {
     '/': {
       img: '/favicon.ico',
     },
-    '/about': {
+    '#about': {
       name: 'About',
     },
-    '/projects': {
+    '#projects': {
       name: 'Projects',
     },
-    'http://blog.jennynguyenoberg.com': {
+    '/blog': {
       name: 'Blog',
     },
-    '/contact': {
+    '#contact': {
       name: 'Contact',
-    }
+    },
   };
 
   const toggleMenu = () => {
@@ -90,20 +85,26 @@ export default function Sidebar() {
                 isOpen ? styles.open : ''
               }`}
             >
-              {Object.entries(navItems).map(
-                ([path, { name }]) => {
-
-                  return (
-                    <Link
-                      key={path}
-                      href={path}
-                      className={classNames(styles.navigationItem)}
-                    >
-                      <span className={styles.linkName}>{name}</span>
-                    </Link>
-                  );
-                },
-              )}
+              {Object.entries(navItems).map(([path, { name }]) => (
+                <a
+                  key={path}
+                  href={path}
+                  className={classNames(styles.navigationItem)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    // Smooth scroll to the section
+                    const sectionId = path.substring(1);
+                    const section = document.getElementById(sectionId);
+                    if (section) {
+                      section.scrollIntoView({
+                        behavior: 'smooth',
+                      });
+                    }
+                  }}
+                >
+                  <span className={styles.linkName}>{name}</span>
+                </a>
+              ))}
             </ul>
           )}
         </div>
