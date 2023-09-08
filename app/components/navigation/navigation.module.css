@@ -1,3 +1,7 @@
+.container {
+  margin: 0 3em;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -94,5 +98,24 @@
   }
   100% {
     transform: rotateY(360deg);
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .container {
+    margin: 0 2em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 0 2em;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .container {
+    margin: 0 2em;
   }
 }

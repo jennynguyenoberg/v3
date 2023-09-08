@@ -10,13 +10,14 @@ import styles from '../styles/home.module.css'
 export default function Home() {
   return (
     <>
-      <div className={styles.container}><Navigation /></div>
+      <div className={styles.container}><Navigation />
         <Hero />
         <About />
         <Projects />
         {/* <Blog /> */}
         <Contact />
         <Footer />
+      </div>
     </>
   );
 }

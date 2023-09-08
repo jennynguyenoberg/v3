@@ -63,30 +63,31 @@ export default function Sidebar() {
   }, [shouldCloseMenu]);
 
   return (
-    <nav className={styles.navbar}>
-      <div className={styles.logoContainer}>
-        <Link href="/">
-          <Image src={navItems['/'].img} alt="Logo" width={32} height={32} />
-        </Link>
-      </div>
-      <div className={styles.menuContainer}>
-        <div
-          className={`${styles['menu-icon']} ${isOpen ? styles.open : ''}`}
-          onClick={toggleMenu}
-        >
-          <div className={styles.bar}></div>
-          <div className={styles.bar}></div>
-          <div className={styles.bar}></div>
+    <div className={styles.container}>
+      <nav className={styles.navbar}>
+        <div className={styles.logoContainer}>
+          <Link href="/">
+            <Image src={navItems['/'].img} alt="Logo" width={32} height={32} />
+          </Link>
         </div>
-        <div className={styles.navItemContainer}>
-          {isOpen && (
-            <ul
-              className={`${styles['navbar-items']} ${
-                isOpen ? styles.open : ''
-              }`}
+        <div className={styles.menuContainer}>
+          <div
+            className={`${styles['menu-icon']} ${isOpen ? styles.open : ''}`}
+            onClick={toggleMenu}
             >
-              {Object.entries(navItems).map(([path, { name }]) => (
-                <a
+            <div className={styles.bar}></div>
+            <div className={styles.bar}></div>
+            <div className={styles.bar}></div>
+          </div>
+          <div className={styles.navItemContainer}>
+            {isOpen && (
+              <ul
+                className={`${styles['navbar-items']} ${
+                  isOpen ? styles.open : ''
+                }`}
+                >
+                {Object.entries(navItems).map(([path, { name }]) => (
+                  <a
                   key={path}
                   href={path}
                   className={classNames(styles.navigationItem)}
@@ -101,14 +102,15 @@ export default function Sidebar() {
                       });
                     }
                   }}
-                >
-                  <span className={styles.linkName}>{name}</span>
-                </a>
-              ))}
-            </ul>
-          )}
+                  >
+                    <span className={styles.linkName}>{name}</span>
+                  </a>
+                ))}
+              </ul>
+            )}
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 }

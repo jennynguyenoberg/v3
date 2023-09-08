@@ -1,6 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
+
+@font-face {
+  font-family: MaisonNeue-Book;
+  src: url('../app/components/fonts/MaisonNeue-Book.woff') format('woff'),
+    url('../app/components/fonts/MaisonNeue-Book.woff2') format('woff2');
+}
+
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: 'MaisonNeue-Book', sans-serif;
 }
 /* :root {
   --max-width: 1100px;

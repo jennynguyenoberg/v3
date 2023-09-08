@@ -1,8 +1,5 @@
 import '../styles/globals.css'
-import { Inter } from 'next/font/google'
 import Head from 'next/head';
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Jenny Nguyen Öberg — Designer & Developer',
@@ -17,7 +14,7 @@ export default function RootLayout({ children }) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   )
 }
