@@ -9,11 +9,20 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'MaisonNeue-Book', sans-serif;
 }
+
+:root {
+  --charcoal: #242321;
+  --beige: ##D4D2BD;
+  --purple: #8B80E5;
+  --light-blue: #B7E0E6;
+}
+
 /* :root {
   --max-width: 1100px;
   --border-radius: 12px;

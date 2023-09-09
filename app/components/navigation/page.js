@@ -36,13 +36,7 @@ export default function Navbar() {
     // Initialize isOpen to false when the component mounts
     setIsOpen(false);
 
-    const handleDocumentClick = (e) => {
-      const menu = document.querySelector(`.${styles['menu-icon']}`);
-      if (menu && !menu.contains(e.target)) {
-        setIsOpen(false);
-        setShouldCloseMenu(false);
-      }
-    };
+    
 
     const handleScroll = () => {
       if (shouldCloseMenu) {
@@ -51,18 +45,14 @@ export default function Navbar() {
       }
     };
 
-    document.addEventListener('click', handleDocumentClick);
     window.addEventListener('scroll', handleScroll);
 
-    // Remove event listeners when the component unmounts
     return () => {
-      document.removeEventListener('click', handleDocumentClick);
       window.removeEventListener('scroll', handleScroll);
     };
   }, [shouldCloseMenu]);
 
   useEffect(() => {
-    // Add a listener to check and set isOpen based on screen width
     const handleResize = () => {
       if (window.innerWidth < 992) {
         setIsOpen(false);
@@ -70,14 +60,10 @@ export default function Navbar() {
         setIsOpen(true);
       }
     };
-
-    // Initial check on component mount
     handleResize();
-
-    // Add a listener for window resize events
+    
     window.addEventListener('resize', handleResize);
 
-    // Remove the resize event listener when the component unmounts
     return () => {
       window.removeEventListener('resize', handleResize);
     };
