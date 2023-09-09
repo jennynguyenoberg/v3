@@ -30,7 +30,7 @@ export default function Navbar() {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-    setShouldCloseMenu(!isOpen);
+    setShouldCloseMenu(false); // Set shouldCloseMenu to false when opening the menu
   };
 
   useEffect(() => {
@@ -107,6 +107,7 @@ export default function Navbar() {
                           behavior: "smooth",
                         });
                       }
+                      setShouldCloseMenu(true); // Close the menu when a link is clicked
                     }}
                   >
                     <span className={styles.linkName}>{name}</span>
