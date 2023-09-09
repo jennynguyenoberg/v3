@@ -9,3 +9,31 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.textContainer {
+  margin: 0 2em;
+}
+
+.title {
+  font-size: 7rem;
+  font-weight: 500;
+  letter-spacing: -.4rem;
+}
+
+@media screen and (max-width: 992px) {
+  .textContainer {
+    margin: 0 2em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .textContainer {
+    margin: 0 2em;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .textContainer {
+    margin: 0 2em;
+  }
+}
