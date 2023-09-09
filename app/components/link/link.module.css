@@ -1,0 +1,25 @@
+.linkItem {
+  color: var(--charcoal);
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 0.15rem; /* space between text and underline */
+}
+
+/* Underline aninmation */
+.linkItem::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 1.2px;
+  background-color: var(--charcoal);
+  transition: width 0.25s ease-out;
+}
+
+.linkItem:hover::before {
+  width: 100%;
+  right: auto;
+  left: 0;
+}

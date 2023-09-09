@@ -21,32 +21,6 @@
   animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 
-.navigationItem {
-  color: var(--charcoal);
-  display: inline-block;
-  position: relative;
-  text-decoration: none;
-  padding-bottom: 0.15rem; /* space between text and underline */
-}
-
-/* Underline aninmation */
-.navigationItem::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 0;
-  height: 1.2px;
-  background-color: var(--charcoal);
-  transition: width 0.25s ease-out;
-}
-
-.navigationItem:hover::before {
-  width: 100%;
-  right: auto;
-  left: 0;
-}
-
 .navbar-items li {
   text-align: right;
   padding: 4px 0;

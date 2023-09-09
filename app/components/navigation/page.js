@@ -4,6 +4,7 @@ import Link from 'next/link';
 import styles from './navigation.module.css';
 import classNames from 'classnames';
 import Image from 'next/image';
+import LinkItem from '@/app/components/link/page'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -94,10 +95,10 @@ export default function Navbar() {
                 }`}
               >
                 {Object.entries(navItems).map(([path, { name }]) => (
-                  <a
+                  <LinkItem
                     key={path}
                     href={path}
-                    className={classNames(styles.navigationItem)}
+                    className={classNames(styles.linkItem)}
                     onClick={(e) => {
                       e.preventDefault();
                       // Smooth scroll to the section
@@ -111,7 +112,7 @@ export default function Navbar() {
                     }}
                   >
                     <span className={styles.linkName}>{name}</span>
-                  </a>
+                  </LinkItem>
                 ))}
               </ul>
             )}
