@@ -1,3 +1,4 @@
+/* Default styles */
 .container {
   margin: 0 2em;
 }
@@ -18,8 +19,7 @@
 }
 
 .logoContainer:hover {
-  animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955)
-    both;
+  animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 
 .menuContainer {
@@ -51,24 +51,19 @@
   flex-direction: column;
   align-items: flex-end;
 }
-
-.logoutButton {
-  border: none;
-  font: inherit;
+.menuContainer {
   cursor: pointer;
 }
 
-/* --- Hamburger menu --- */
-
+/* Hamburger menu - initially hidden */
 .menu-icon {
+  display: none;
   cursor: pointer;
   display: flex;
-  transition: all 0.8s ease;
-  flex-direction: column;
+  flex-direction: column; /* Change from row to column */
+  align-items: center; /* Center the bars horizontally */
   justify-content: space-between;
-  width: 20px;
   height: 11px;
-  z-index: 1;
 }
 
 .menu-icon div.bar {
@@ -78,8 +73,7 @@
   transition: all 0.3s ease;
 }
 
-/* --- Hamburger menu animation --- */
-
+/* Hamburger menu animation */
 .menu-icon.open div.bar:nth-child(2) {
   opacity: 0;
 }
@@ -101,20 +95,9 @@
   }
 }
 
+/* Media query to show the menu icons below 992px */
 @media screen and (max-width: 992px) {
-  .container {
-    margin: 0 2em;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .container {
-    margin: 0 2em;
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .container {
-    margin: 0 2em;
+  .menu-icon {
+    display: flex;
   }
 }
