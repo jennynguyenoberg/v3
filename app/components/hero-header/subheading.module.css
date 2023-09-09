@@ -20,10 +20,10 @@
     top: 0;
   }
   25% {
-    top: -15.3px;
+    top: -15.4px;
   }
   45% {
-    top: -15.3px;
+    top: -15.4px;
   }
   50% {
     top: -30px;
@@ -59,3 +59,19 @@
     opacity: 0.25;
   }
 } */
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 600px) {
+  .subheading {
+
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .subheading {
+
+  }
+}

@@ -10,11 +10,11 @@
 
 .title {
   /* font-family: 'Playfair Display', serif; */
-  font-size: 10rem;
+  font-size: 12rem;
   font-weight: 500;
   letter-spacing: -0.8rem;
   margin-top: 3rem;
-  height: 25vh;
+  height: 26vh;
   /* font-style: italic; */
   animation: left-to-right 50s infinite linear;
 }
@@ -37,5 +37,14 @@
     margin: 0 1em;
     bottom: rem;
     position: absolute;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .textContainer {
+    margin: 0 2em;
+  }
+  .title {
+    height: 26vh;
   }
 }
