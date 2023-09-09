@@ -14,16 +14,30 @@
   margin: 0 2em;
 }
 
+.rowWrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  /* margin-right: 10%; */
+}
+
 .title {
-  font-size: 7rem;
+  /* font-family: 'Playfair Display', serif; */
+  font-size: 6.5rem;
   font-weight: 500;
-  letter-spacing: -.4rem;
+  letter-spacing: -0.3rem;
+  margin-top: 2rem;
+  /* font-style: italic; */
 }
 
 @media screen and (max-width: 992px) {
   .textContainer {
     margin: 0 2em;
   }
+/* 
+  .rowWrapper {
+    margin-right: 0;
+  } */
 }
 
 @media screen and (max-width: 600px) {

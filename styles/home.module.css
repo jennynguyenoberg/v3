@@ -1,6 +1,5 @@
 .container {
   margin: 0 0em;
-  color: var(--charcoal);
 }
 
 @media screen and (max-width: 992px) {
