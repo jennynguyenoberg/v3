@@ -23,11 +23,28 @@
 
 .navigationItem {
   color: var(--charcoal);
+  display: inline-block;
+  position: relative;
   text-decoration: none;
+  padding-bottom: 0.15rem; /* space between text and underline */
 }
 
-.navigationItem:hover {
-  text-decoration: underline;
+/* Underline aninmation */
+.navigationItem::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 1.2px;
+  background-color: var(--charcoal);
+  transition: width 0.25s ease-out;
+}
+
+.navigationItem:hover::before {
+  width: 100%;
+  right: auto;
+  left: 0;
 }
 
 .navbar-items li {
@@ -43,7 +60,7 @@
 }
 
 .menuContainer {
-  cursor: pointer;
+  /* cursor: pointer; */
   padding: 5px;
 }
 
