@@ -1,13 +1,25 @@
 import styles from './hero.module.css';
-import LinkItem from '@/app/components/link/page'
+import {BiSolidCircle} from 'react-icons/bi'
 
 export default function Hero() {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.textContainer}>
         <div className={styles.rowWrapper}>
-          <span href="/">Designer & Developer</span>
-          <span>&#60;Site is under maintenance &#47;&#62;</span>
+          <div className={styles.rowOne}>
+            <span href="/">↳ Currently looking for an internship starting January
+              <BiSolidCircle
+                className={styles.dot} 
+                size={10}
+                style={{
+                  color: 'red'
+                }}
+              />
+            </span>
+          </div>
+          {/* <div className={styles.rowTwo}>
+            <span href="/">Designer & Developer</span>
+          </div> */}
         </div>
         <div className={styles.header}>
           <h1 className={styles.title}>Jenny Nguyen Öberg —</h1>
