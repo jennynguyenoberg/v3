@@ -36,10 +36,12 @@ export default function Hero() {
             <span href="/">Designer & Developer</span>
           </div> */}
         </div>
-        <div className={styles.header}>
-          <h1 className={styles.title}>Jenny Nguyen Öberg —</h1>
-        </div>
       </div>
+        <div className={styles.header}>
+          <div className={styles.headerScroll}>
+            <div className={styles.title}>Jenny Nguyen Öberg — Jenny Nguyen Öberg — Jenny Nguyen Öberg — Jenny Nguyen Öberg — Jenny Nguyen Öberg — Jenny Nguyen Öberg —</div>
+          </div>
+        </div>
     </div>
   );
 }
