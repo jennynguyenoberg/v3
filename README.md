@@ -14,7 +14,7 @@
 </p>
 
 
-![Image of portfolio website]((https://github.com/jennynguyenoberg/v3/assets/116844306/0ce7a6a7-63c3-4994-9dd2-129ab5dc4f91))
+![Image of portfolio website](https://github.com/jennynguyenoberg/v3/blob/main/public/portfolio-hero.gif?raw=true)
 
 ## Getting started
 
