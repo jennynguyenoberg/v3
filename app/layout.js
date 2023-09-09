@@ -1,10 +1,10 @@
-import '../styles/globals.css'
-import Head from 'next/head';
+import "../styles/globals.css";
+import Head from "next/head";
 
 export const metadata = {
-  title: 'Jenny Nguyen Öberg — Designer & Developer',
-  description: 'Portfolio of Jenny Nguyen Öberg',
-}
+  title: "Jenny Nguyen Öberg — Designer & Developer",
+  description: "Portfolio of Jenny Nguyen Öberg",
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -16,5 +16,5 @@ export default function RootLayout({ children }) {
       </Head>
       <body>{children}</body>
     </html>
-  )
+  );
 }

@@ -1,5 +1,5 @@
-import styles from './link.module.css';
-import classNames from 'classnames';
+import styles from "./link.module.css";
+import classNames from "classnames";
 
 export default function LinkItem({ children, className, ...props }) {
   return (

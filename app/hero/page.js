@@ -1,5 +1,5 @@
-import styles from './hero.module.css';
-import {BiSolidCircle} from 'react-icons/bi'
+import styles from "./hero.module.css";
+// import { BiSolidCircle } from "react-icons/bi";
 
 export default function Hero() {
   return (
@@ -7,29 +7,31 @@ export default function Hero() {
       <div className={styles.textContainer}>
         <div className={styles.rowWrapper}>
           <div className={styles.rowOne}>
-            <div href="/">↳ Currently looking for an internship starting
-          </div>
+            <div href="/">↳ Currently looking for an internship starting</div>
           </div>
           <div className={styles.rowTwo}>
-            <span>January
-            {/* <BiSolidCircle
+            <span>
+              January
+              {/* <BiSolidCircle
                 className={styles.dot} 
                 size={10}
                 style={{
                   color: 'red'
                 }}
               /> */}
-            </span><br />
-                <span>2024
-                  {/* <BiSolidCircle
+            </span>
+            <br />
+            <span>
+              2024
+              {/* <BiSolidCircle
                     className={styles.dot} 
                     size={10}
                     style={{
                       color: 'red'
                     }}
                   /> */}
-                </span>
-            </div>
+            </span>
+          </div>
           {/* <div className={styles.rowTwo}>
             <span href="/">Designer & Developer</span>
           </div> */}

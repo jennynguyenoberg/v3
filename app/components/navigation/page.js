@@ -1,30 +1,30 @@
-'use client';
-import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import styles from './navigation.module.css';
-import classNames from 'classnames';
-import Image from 'next/image';
-import LinkItem from '@/app/components/link/page'
+"use client";
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import styles from "./navigation.module.css";
+import classNames from "classnames";
+import Image from "next/image";
+import LinkItem from "@/app/components/link/page";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [shouldCloseMenu, setShouldCloseMenu] = useState(false);
 
   const navItems = {
-    '/': {
-      img: '/favicon.ico',
+    "/": {
+      img: "/favicon.ico",
     },
-    '#about': {
-      name: 'About',
+    "#about": {
+      name: "About",
     },
-    '#projects': {
-      name: 'Projects',
+    "#projects": {
+      name: "Projects",
     },
-    '/blog': {
-      name: 'Blog',
+    "/blog": {
+      name: "Blog",
     },
-    '#contact': {
-      name: 'Contact',
+    "#contact": {
+      name: "Contact",
     },
   };
 
@@ -37,8 +37,6 @@ export default function Navbar() {
     // Initialize isOpen to false when the component mounts
     setIsOpen(false);
 
-    
-
     const handleScroll = () => {
       if (shouldCloseMenu) {
         setIsOpen(false);
@@ -46,10 +44,10 @@ export default function Navbar() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [shouldCloseMenu]);
 
@@ -62,11 +60,11 @@ export default function Navbar() {
       }
     };
     handleResize();
-    
-    window.addEventListener('resize', handleResize);
+
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -75,12 +73,12 @@ export default function Navbar() {
       <nav className={styles.navbar}>
         <div className={styles.logoContainer}>
           <Link href="/">
-            <Image src={navItems['/'].img} alt="Logo" width={32} height={32} />
+            <Image src={navItems["/"].img} alt="Logo" width={32} height={32} />
           </Link>
         </div>
         <div className={styles.menuContainer}>
           <div
-            className={`${styles['menu-icon']} ${isOpen ? styles.open : ''}`}
+            className={`${styles["menu-icon"]} ${isOpen ? styles.open : ""}`}
             onClick={toggleMenu}
           >
             <div className={styles.bar}></div>
@@ -90,8 +88,8 @@ export default function Navbar() {
           <div className={styles.navItemContainer}>
             {isOpen && (
               <ul
-                className={`${styles['navbar-items']} ${
-                  isOpen ? styles.open : ''
+                className={`${styles["navbar-items"]} ${
+                  isOpen ? styles.open : ""
                 }`}
               >
                 {Object.entries(navItems).map(([path, { name }]) => (
@@ -106,7 +104,7 @@ export default function Navbar() {
                       const section = document.getElementById(sectionId);
                       if (section) {
                         section.scrollIntoView({
-                          behavior: 'smooth',
+                          behavior: "smooth",
                         });
                       }
                     }}

@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap");
 
 @font-face {
   font-family: MaisonNeue-Book;
-  src: url('../app/components/fonts/MaisonNeue-Book.woff') format('woff'),
-    url('../app/components/fonts/MaisonNeue-Book.woff2') format('woff2');
+  src:
+    url("../app/components/fonts/MaisonNeue-Book.woff") format("woff"),
+    url("../app/components/fonts/MaisonNeue-Book.woff2") format("woff2");
 }
 
-*, 
-*::before, 
+*,
+*::before,
 *::after {
   margin: 0;
   padding: 0;
@@ -15,7 +16,7 @@
 }
 
 body {
-  font-family: 'MaisonNeue-Book', sans-serif;
+  font-family: "MaisonNeue-Book", sans-serif;
   color: var(--charcoal);
   letter-spacing: -0.03em;
   font-weight: 500;
@@ -24,9 +25,9 @@ body {
 
 :root {
   --charcoal: #242321;
-  --beige: ##D4D2BD;
-  --purple: #8B80E5;
-  --light-blue: #B7E0E6;
+  --beige: ##d4d2bd;
+  --purple: #8b80e5;
+  --light-blue: #b7e0e6;
 }
 
 /* :root {
