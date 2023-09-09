@@ -34,24 +34,6 @@ export default function Navbar() {
   };
 
   useEffect(() => {
-    // Initialize isOpen to false when the component mounts
-    setIsOpen(false);
-
-    const handleScroll = () => {
-      if (shouldCloseMenu) {
-        setIsOpen(false);
-        setShouldCloseMenu(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [shouldCloseMenu]);
-
-  useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 992) {
         setIsOpen(false);
