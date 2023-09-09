@@ -10,7 +10,8 @@
   background-size: cover;
 }
 
-.textContainer {
+.textContainer,
+.desc {
   margin: 0 2em;
 }
 
@@ -19,114 +20,38 @@
   align-items: center;
   flex-direction: row;
   /* margin-right: 10.5%; */
+  margin-top: 4rem;
 }
 
-.rowTwo {
-  margin-left: 3.5px;
-  border: 0px solid #ddd;
-  height: 15px;
-  line-height: 15px;
-  overflow: hidden;
-}
-
-.rowTwo span {
-  position: relative;
-  animation: animation 6s ease-in-out infinite;
-}
-
-@keyframes animation {
-  0%,
-  100% {
-    top: 0;
-  }
-  20% {
-    top: 0;
-  }
-  25% {
-    top: -15.3px;
-  }
-  45% {
-    top: -15.3px;
-  }
-  50% {
-    top: -30px;
-  }
-  70% {
-    top: -30px;
-  }
-  75% {
-    top: -70px;
-  }
-  95% {
-    top: -70px;
-  }
-}
-
-.rowTwo {
+.desc {
   display: flex;
-  flex-direction: column;
-}
-
-.dot {
-  padding-top: 3px;
-  margin-left: 4px;
-  animation: up-right 1s infinite;
-}
-
-@keyframes up-right {
-  0% {
-    transform: scale(1);
-    opacity: 0.25;
-  }
-  50% {
-    transform: scale (1, 5);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0.25;
-  }
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-
-.headerScroll {
-  white-space: nowrap;
-}
-
-.title {
-  /* font-family: 'Playfair Display', serif; */
-  font-size: 10rem;
-  font-weight: 500;
-  letter-spacing: -0.8rem;
+  justify-content: flex-end;
+  font-size: 32px;
   margin-top: 3rem;
-  height: 25vh;
-  /* font-style: italic; */
-  animation: left-to-right 50s infinite linear;
-}
-
-@keyframes left-to-right {
-  from {
-    transform: translateX(-0%);
-  }
-  to {
-    transform: translateX(-50%);
-  }
+  margin-right: 15%;
 }
 
 @media screen and (max-width: 992px) {
   .textContainer {
     margin: 0 2em;
   }
+  .desc {
+    justify-content: flex-start;
+    margin: 0 1em;
+    bottom: 3rem;
+    position: absolute;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .textContainer {
     margin: 0 2em;
+  }
+  .desc {
+    justify-content: flex-start;
+    margin: 0 1em;
+    bottom: 3rem;
+    position: absolute;
   }
 }
 

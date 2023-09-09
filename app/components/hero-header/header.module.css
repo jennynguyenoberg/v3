@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.headerScroll {
+  white-space: nowrap;
+}
+
+.title {
+  /* font-family: 'Playfair Display', serif; */
+  font-size: 10rem;
+  font-weight: 500;
+  letter-spacing: -0.8rem;
+  margin-top: 3rem;
+  height: 25vh;
+  /* font-style: italic; */
+  animation: left-to-right 50s infinite linear;
+}
+
+@keyframes left-to-right {
+  from {
+    transform: translateX(-0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .textContainer {
+    margin: 0 2em;
+  }
+  .desc {
+    justify-content: flex-start;
+    margin: 0 1em;
+    bottom: rem;
+    position: absolute;
+  }
+}

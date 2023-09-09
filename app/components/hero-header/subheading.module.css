@@ -1,0 +1,61 @@
+.subheading {
+  margin-left: 3.5px;
+  border: 0px solid #ddd;
+  height: 15px;
+  line-height: 15px;
+  overflow: hidden;
+}
+
+.subheading span {
+  position: relative;
+  animation: rotate-animation 6s ease-in-out infinite;
+}
+
+@keyframes rotate-animation {
+  0%,
+  100% {
+    top: 0;
+  }
+  20% {
+    top: 0;
+  }
+  25% {
+    top: -15.3px;
+  }
+  45% {
+    top: -15.3px;
+  }
+  50% {
+    top: -30px;
+  }
+  70% {
+    top: -30px;
+  }
+  75% {
+    top: -70px;
+  }
+  95% {
+    top: -70px;
+  }
+}
+
+/* .dot {
+  padding-top: 3px;
+  margin-left: 4px;
+  animation: up-right 1s infinite;
+}
+
+@keyframes up-right {
+  0% {
+    transform: scale(1);
+    opacity: 0.25;
+  }
+  50% {
+    transform: scale (1, 5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.25;
+  }
+} */
