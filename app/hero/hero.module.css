@@ -16,9 +16,50 @@
 
 .rowWrapper {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   flex-direction: row;
-  margin-right: 10.5%;
+  /* margin-right: 10.5%; */
+}
+
+.rowTwo {
+  margin-left: 3.5px;
+  border: 0px solid #ddd;
+  height: 15px;
+  line-height: 15px;
+  overflow: hidden;
+}
+
+.rowTwo span {
+  position: relative;
+  animation: animation 6s ease-in-out infinite;
+}
+
+@keyframes animation {
+  0%,
+  100% {
+    top: 0;
+  }
+  20% {
+    top: 0;
+  }
+  25% {
+    top: -15px;
+  }
+  45% {
+    top: -15px;
+  }
+  50% {
+    top: -30px;
+  }
+  70% {
+    top: -30px;
+  }
+  75% {
+    top: -70px;
+  }
+  95% {
+    top: -70px;
+  }
 }
 
 .rowTwo {

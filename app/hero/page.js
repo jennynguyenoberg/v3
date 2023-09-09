@@ -7,16 +7,29 @@ export default function Hero() {
       <div className={styles.textContainer}>
         <div className={styles.rowWrapper}>
           <div className={styles.rowOne}>
-            <span href="/">↳ Currently looking for an internship starting January
-              <BiSolidCircle
+            <div href="/">↳ Currently looking for an internship starting
+          </div>
+          </div>
+          <div className={styles.rowTwo}>
+            <span>January
+            {/* <BiSolidCircle
                 className={styles.dot} 
                 size={10}
                 style={{
                   color: 'red'
                 }}
-              />
-            </span>
-          </div>
+              /> */}
+            </span><br />
+                <span>2024
+                  {/* <BiSolidCircle
+                    className={styles.dot} 
+                    size={10}
+                    style={{
+                      color: 'red'
+                    }}
+                  /> */}
+                </span>
+            </div>
           {/* <div className={styles.rowTwo}>
             <span href="/">Designer & Developer</span>
           </div> */}
