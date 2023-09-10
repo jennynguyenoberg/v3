@@ -1,12 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap");
 
 @font-face {
-  font-family: 'MaisonNeue';
-  src: 
-    url('../fonts/MaisonNeue-Book.woff') format('woff'),
+  font-family: 'MaisonNeue-Book';
+  src: url('../fonts/MaisonNeue-Book.woff') format('woff'),
     url('../fonts/MaisonNeue-Book.woff2') format('woff2');
 }
-
 *,
 *::before,
 *::after {
@@ -18,7 +16,7 @@
 html,
 body {
   color: var(--charcoal);
-  font-family: 'MaisonNeue', sans-serif;
+  font-family: 'MaisonNeue-Book', sans-serif;
   letter-spacing: -0.03em;
   font-size: 16px;
 }
