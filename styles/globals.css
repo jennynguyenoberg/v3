@@ -1,13 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap");
 
 @font-face {
-  font-family: 'MaisonNeue-Book';
-  src:
-    url('../public/fonts/MaisonNeue-Book.woff') format('woff'),
-    url('../public/fonts/MaisonNeue-Book.woff2') format('woff2');
-  font-weight: 500;
+  font-family: "MaisonNeue-Book";
+  src: url('../fonts/MaisonNeue-Book.ttf');
+  font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
 *,
