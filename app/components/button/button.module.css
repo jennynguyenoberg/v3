@@ -1,0 +1,14 @@
+.container {
+  padding: 30px 40px;
+  font-size: 17px;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+.container:hover {
+  background-color: blue;
+  border-color: transparent;
+}

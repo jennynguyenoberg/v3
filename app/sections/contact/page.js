@@ -1,6 +1,8 @@
 'use client';
 import styles from "./contact.module.css";
 import Footer from "../../components/footer/page";
+import Button from "@/app/components/button/page";
+// import { BiSolidCircle } from "react-icons/bi";
 
 export default function Contact() {
   const openEmailWindow = () => {
@@ -14,8 +16,8 @@ export default function Contact() {
         <div className={styles.greeting}>
           <p>{`Let's connect!`}</p>
         </div>
-        <div>
-          <button onClick={openEmailWindow}>Send an email</button>
+        <div className={styles.contactButton}>
+          <Button onClick={openEmailWindow}>hello@jennynguyenoberg.com</Button>
         </div>
       </div>
       <Footer />
