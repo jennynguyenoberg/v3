@@ -5,6 +5,8 @@ export default function About() {
     <>
       <div id="about" className={styles.main}>
         <h1>About section</h1>
+        <p></p>
+        <p></p>
       </div>
     </>
   );
