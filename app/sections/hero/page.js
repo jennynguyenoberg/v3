@@ -8,7 +8,7 @@ export default function Hero() {
     <div className={styles.mainContainer}>
       <div className={styles.textContainer}>
         <div className={styles.rowWrapper}>
-          <div href="/">↳ Currently looking for an internship starting in</div>
+          <div href="/">↳ Looking for an internship starting in</div>
           <div className={stylesSub.subheading}>
             <span>
               January

@@ -32,9 +32,6 @@
 }
 
 @media screen and (max-width: 992px) {
-  .textContainer {
-    margin: 0 2em;
-  }
   .desc {
     justify-content: flex-start;
     margin: 0 1em;
@@ -42,14 +39,12 @@
     position: absolute;
   }
   .rowWrapper {
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-left: -1em;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .textContainer {
-    margin: 0 1em;
-  }
   .desc {
     justify-content: flex-start;
     margin: 0 1em;
@@ -57,18 +52,12 @@
     position: absolute;
   }
   .rowWrapper {
-    margin: 2rem 0 0 1rem;
+    margin-left: -1em;
   }
 }
 
 @media screen and (max-width: 390px) {
-  .textContainer {
-    margin: 0 1em;
-  }
-  .desc {
-    margin: 0 0.93em;
-  }
   .rowWrapper {
-    margin: 0 2rem 0 1rem;
+    margin-left: -1em;
   }
 }
