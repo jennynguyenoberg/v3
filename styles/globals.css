@@ -5,10 +5,6 @@
   src: 
     url('../fonts//MaisonNeue-Book.woff') format('woff'),
     url('../fonts/MaisonNeue-Book.woff2') format('woff2'),
-    url('../fonts/MaisonNeue-Book.otf') format('opentype'),
-    url('../fonts/MaisonNeue-Book.ttf') format('truetype');
-    font-style: normal;
-    font-display: swap;
 }
 
 *,
@@ -22,7 +18,7 @@
 html,
 body {
   color: var(--charcoal);
-  font-family: 'MaisonNeue-Book', sans-serif;
+  font-family: 'MaisonNeue-Book' !important;
   letter-spacing: -0.03em;
   font-size: 16px;
 }
