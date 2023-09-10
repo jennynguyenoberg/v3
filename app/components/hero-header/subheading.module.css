@@ -2,8 +2,9 @@
   margin-left: 3.5px;
   border: 0px solid #ddd;
   height: 15px;
-  line-height: 15px;
+  line-height: 17px;
   overflow: hidden;
+  margin-bottom: 2px;
 }
 
 .subheading span {
@@ -20,16 +21,16 @@
     top: 0;
   }
   25% {
-    top: -15.4px;
+    top: -17px;
   }
   45% {
-    top: -15.4px;
+    top: -17px;
   }
   50% {
-    top: -30px;
+    top: -32px;
   }
   70% {
-    top: -30px;
+    top: -32px;
   }
   75% {
     top: -70px;

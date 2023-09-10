@@ -1,0 +1,26 @@
+.container {
+  height: 100vh;
+  margin-top: -95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--beige);
+}
+
+.title {
+  font-size: 200px;
+  margin-top: 20px;
+}
+
+.subtitle {
+  margin-top: 50px;
+}
+
+.link a {
+  text-underline-offset: 3px;
+}
+
+.link a:hover {
+  text-underline-offset: 3px;
+}
