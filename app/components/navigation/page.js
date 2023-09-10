@@ -81,13 +81,22 @@ export default function Navbar() {
                     className={classNames(styles.linkItem)}
                     onClick={(e) => {
                       e.preventDefault();
-                      // Smooth scroll to the section
-                      const sectionId = path.substring(1);
-                      const section = document.getElementById(sectionId);
-                      if (section) {
-                        section.scrollIntoView({
+                      // Check if the link is the contact link
+                      if (path === "#contact") {
+                        // Scroll to the bottom of the page
+                        window.scrollTo({
+                          top: document.body.scrollHeight,
                           behavior: "smooth",
                         });
+                      } else {
+                        // Smooth scroll to the section
+                        const sectionId = path.substring(1);
+                        const section = document.getElementById(sectionId);
+                        if (section) {
+                          section.scrollIntoView({
+                            behavior: "smooth",
+                          });
+                        }
                       }
                       setShouldCloseMenu(true); // Close the menu when a link is clicked
                     }}
