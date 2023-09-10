@@ -1,4 +1,4 @@
 .main {
-  background-color: pink;
+  background-color: var(--charcoal);
   height: 100vh;
 }

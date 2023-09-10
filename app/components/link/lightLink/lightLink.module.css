@@ -1,0 +1,24 @@
+.linkItem {
+  color: white;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+
+/* Underline aninmation */
+.linkItem::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 1.2px;
+  background-color: white;
+  transition: width 0.25s ease-out;
+}
+
+.linkItem:hover::before {
+  width: 100%;
+  right: auto;
+  left: 0;
+}

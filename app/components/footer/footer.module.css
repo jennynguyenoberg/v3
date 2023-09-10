@@ -1,0 +1,22 @@
+.footer {
+  margin: -115px 1.5em 0 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  font-size: 16px;
+  border-top: 1px solid #cecece;
+  color: white;
+}
+
+.footerContent {
+  margin-top: 20px;
+}
+
+.footerLinksLeft,
+.footerLinksRight {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 8px;
+}
