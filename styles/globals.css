@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: "MaisonNeue-Book", sans-serif;
+  font-family: MaisonNeue-Book, sans-serif;
   color: var(--charcoal);
   letter-spacing: -0.03em;
   font-weight: 500;
