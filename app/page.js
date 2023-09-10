@@ -4,6 +4,7 @@ import Projects from "./sections/projects/page";
 // import Blog from './blog/page'
 import Contact from "./sections/contact/page";
 import styles from "../styles/home.module.css";
+import "../styles/globals.css";
 
 export default function Home() {
   return (
