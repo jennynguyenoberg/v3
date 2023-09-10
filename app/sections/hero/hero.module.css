@@ -13,6 +13,7 @@
 .textContainer,
 .desc,
 .rowWrapper {
+  transition: .5s;
   margin: 0 3.5em;
 }
 

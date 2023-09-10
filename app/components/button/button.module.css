@@ -1,14 +1,49 @@
+.main {
+  display: flex;
+}
+
 .container {
-  padding: 30px 40px;
-  font-size: 17px;
-  border-radius: 50px;
-  background-color: transparent;
+  width: 100%;
+  height: 75px;
+  line-height: .5em;
+  position: relative;
+  overflow: hidden;
   border: 1px solid white;
-  color: white;
-  cursor: pointer;
+  transition: color .5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 60px;
+  color: #cecece;
+  background-color: transparent;
+  padding: 0 45px;
+}
+
+.container:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: white;
+  height: 290px;
+  width: 650px;
+  border-radius: 50%;
 }
 
 .container:hover {
-  background-color: blue;
-  border-color: transparent;
+  color: var(--charcoal);
 }
+
+.container:before {
+  top: 100%;
+  left: 100%;
+  transition: all 1s;
+}
+
+.container:hover:before {
+  top: -65px;
+  left: -65px;
+}
+
+.container:active:before {
+  background: white;
+  transition: background 0s;
+ }

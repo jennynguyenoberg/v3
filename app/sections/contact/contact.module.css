@@ -5,8 +5,25 @@
   justify-content: space-between;
   /* flex-direction: column; */
   background-color: var(--charcoal);
+  flex-wrap: wrap;
+  transition: .3s;
 }
 
 .greeting {
   font-size: 72px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 10em 1.5em;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .container {
+    padding: 10em 1.5em;
+  }
 }
