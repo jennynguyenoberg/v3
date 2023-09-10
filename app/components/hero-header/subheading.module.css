@@ -1,8 +1,8 @@
 .subheading {
   margin-left: 3.5px;
   border: 0px solid #ddd;
-  height: 15px;
-  line-height: 17px;
+  height: 16px;
+  line-height: 18px;
   overflow: hidden;
   margin-bottom: 2px;
 }
@@ -21,16 +21,16 @@
     top: 0;
   }
   25% {
-    top: -17px;
+    top: -18px;
   }
   45% {
-    top: -17px;
+    top: -18px;
   }
   50% {
-    top: -32px;
+    top: -33px;
   }
   70% {
-    top: -32px;
+    top: -33px;
   }
   75% {
     top: -70px;
