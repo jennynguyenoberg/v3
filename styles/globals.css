@@ -2,9 +2,8 @@
 
 @font-face {
   font-family: MaisonNeue-Book;
-  src:
-    url("../app/fonts/MaisonNeue-Book.woff") format("woff"),
-    url("../app/fonts/MaisonNeue-Book.woff2") format("woff2");
+  src: url('../fonts//MaisonNeue-Book.woff') format('woff'),
+    url('../fonts/MaisonNeue-Book.woff2') format('woff2');
 }
 
 *,
@@ -15,9 +14,11 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: MaisonNeue-Book;
+html,
+body,
+body * {
   color: var(--charcoal);
+  font-family: MaisonNeue-Book, sans-serif;
   letter-spacing: -0.03em;
   font-weight: 500;
   font-size: 16px;
