@@ -1,22 +1,32 @@
-import LightLinkItem from '../link/lightLink/page';
 import styles from './footer.module.css';
+import LightLinkItem from '../link/lightLink/page';
+import footerData from '../../config/footerData';
 
 export default function Footer() {
+  const { links, copyrightText, additionalInfo } = footerData;
+
   return (
-    <footer className={styles.footer}>
-      <div className={styles.footerContent}>
-        <ul className={styles.footerLinksLeft}>
-          <li><LightLinkItem href="/">Github</LightLinkItem></li>
-          <li><LightLinkItem href="/about">LinkedIn</LightLinkItem></li>
-          <li><LightLinkItem href="/contact">Instagram</LightLinkItem></li>
-        </ul>
-      </div>
-      <div className={styles.footerContent}>
-        <div className={styles.footerContent}>
-          <ul className={styles.footerLinksRight}>
-            <li>2023 &copy; Built and designed by Jenny Nguyen Öberg</li>
+    <footer className={styles.mainContainer}>
+      <div className={styles.subContainer}>
+        <div>
+          <ul className={styles.footerLinksLeft}>
+            {links.map((link, index) => (
+              <LightLinkItem key={index} href={link.url} target="_blank">
+                {link.text}
+              </LightLinkItem>
+            ))}
           </ul>
+        </div>
+        <div>
+          <ul className={styles.copyrightText}>
+            <li>{copyrightText}</li>
+          </ul>
+        </div>
       </div>
+      <div className={styles.bottom}>
+        <div className={styles.bottomScroll}>
+          <div className={styles.title}>{additionalInfo}</div>
+        </div>
       </div>
     </footer>
   );

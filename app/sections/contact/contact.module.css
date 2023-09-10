@@ -1,4 +1,13 @@
-.main {
+.container {
+  padding: 0 10em;
+  height: 50vh;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: var(--charcoal);
-  height: 100vh;
+}
+
+.greeting {
+  font-size: 52px;
 }
