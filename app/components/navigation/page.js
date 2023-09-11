@@ -8,7 +8,6 @@ import DarkLinkItem from "@/app/components/link/darkLink/page";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [shouldCloseMenu, setShouldCloseMenu] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -57,26 +56,14 @@ export default function Navbar() {
                 }`}
               >
                 <DarkLinkItem
-                  href="#intro"
+                  href="/about"
                   className={classNames(styles.linkItem)}
-                  onClick={() => setShouldCloseMenu(true)}
                 >
                   <span className={styles.linkName}>About</span>
                 </DarkLinkItem>
                 <DarkLinkItem
-                  href="#projects"
+                  href="/projects"
                   className={classNames(styles.linkItem)}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    // Smooth scroll to the section
-                    const section = document.getElementById("projects");
-                    if (section) {
-                      section.scrollIntoView({
-                        behavior: "smooth",
-                      });
-                    }
-                    setShouldCloseMenu(true); // Close the menu when a link is clicked
-                  }}
                 >
                   <span className={styles.linkName}>Projects</span>
                 </DarkLinkItem>

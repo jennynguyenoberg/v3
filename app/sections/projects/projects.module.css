@@ -1,4 +1,7 @@
-.main {
-  background-color: goldenrod;
+.container {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
+  justify-content: center;
+  background-color: var(--light-blue);
 }
