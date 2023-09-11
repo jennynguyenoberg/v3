@@ -1,29 +1,48 @@
 .container {
-  padding: 13em 10em;
+  padding: 7em 10em;
   color: white;
   display: flex;
   justify-content: space-between;
-  /* flex-direction: column; */
+  flex-direction: row;
   background-color: var(--charcoal);
-  flex-wrap: wrap;
   transition: .3s;
+  gap: 20%;
 }
 
 .greeting {
-  font-size: 72px;
+  padding-top: 95px;
   display: flex;
-  align-items: flex-end;
-  margin-bottom: 15px;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.greetingHead {
+  font-size: 82px;
+  letter-spacing: -0.04em;
+}
+
+.contactButton {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 922px) {
+  .container {
+    padding: 10em 5em;
+    flex-wrap: wrap;
+  }
+  .greetingSub {
+    margin-bottom: 25px;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .container {
     padding: 10em 1.5em;
+    flex-wrap: wrap;
   }
-}
-
-@media screen and (max-width: 390px) {
-  .container {
-    padding: 10em 1.5em;
+  .greetingSub {
+    margin-bottom: 25px;
   }
 }

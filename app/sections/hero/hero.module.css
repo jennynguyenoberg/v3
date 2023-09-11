@@ -10,26 +10,21 @@
   background-size: cover;
 }
 
-.textContainer,
-.desc,
-.rowWrapper {
-  transition: .5s;
-  margin: 0 3.5em;
-}
-
 .rowWrapper {
   display: flex;
   align-items: center;
   flex-direction: row;
   margin-top: 5rem;
+  padding-left: 6.2em;
 }
 
 .desc {
   display: flex;
   justify-content: flex-end;
   font-size: 32px;
-  margin-top: 4rem;
-  letter-spacing: -0.035em;
+  margin-top: 5.5rem;
+  letter-spacing: -0.04em;
+  padding-right: 7.5em;
 }
 
 @media screen and (max-width: 992px) {

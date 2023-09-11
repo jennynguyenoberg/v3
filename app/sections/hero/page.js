@@ -1,6 +1,6 @@
 import styles from "./hero.module.css";
-import stylesSub from "@/app/components/hero-header/subheading.module.css";
-import stylesHead from "@/app/components/hero-header/header.module.css";
+import stylesSub from "@/app/components/headings/subheading.module.css";
+import stylesHead from "@/app/components/headings/header.module.css";
 // import { BiSolidCircle } from "react-icons/bi";
 
 export default function Hero() {
@@ -43,7 +43,7 @@ export default function Hero() {
         </div>
       </div>
       <div className={styles.desc}>
-        <span href="/">Designer & Developer</span>
+        <p href="/">Designer & Developer</p>
       </div>
     </div>
   );

@@ -14,7 +14,12 @@ export default function Contact() {
     <>
       <div className={styles.container}>
         <div className={styles.greeting}>
-          <p>{`Let's connect!`}</p>
+          <p className={styles.greetingHead}>{`Let's connect!`}</p>
+          <p className={styles.greetingSub}>{`
+            Available for internship starting January 2024 or for freelance work. 
+            Let's grab a ☕️ and talk about your upcoming web or design project!
+          `}
+          </p>
         </div>
         <div className={styles.contactButton}>
           <Button onClick={openEmailWindow}>hello@jennynguyenoberg.com</Button>
