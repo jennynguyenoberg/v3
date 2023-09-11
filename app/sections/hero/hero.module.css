@@ -12,10 +12,13 @@
 
 .rowWrapper {
   display: flex;
-  margin-top: 5rem;
-  margin-bottom: -0.01px;
+  margin-top: 6rem;
   padding-left: 6.2em;
   transition: .3s;
+}
+
+.calloutText {
+  padding-top: .3px;
 }
 
 .descContainer {
@@ -28,15 +31,12 @@
 
 @media screen and (max-width: 992px) {
   .rowWrapper {
-    margin-top: 1rem;
+    margin-top: 5rem;
     margin-left: -4.3em;
   }
   .descContainer {
-    justify-content: flex-start;
-    margin-left: 1.8em;
-    padding-right: 43%;
-    bottom: 6rem;
-    position: absolute;
+    margin-right: 40px;
+    padding-left: 1.9em;
   }
 }
 
@@ -45,11 +45,8 @@
     margin-left: -4.3em;
   }
   .descContainer {
-    justify-content: flex-start;
-    margin-left: 1.8em;
-    padding-right: 43%;
-    bottom: 6rem;
-    position: absolute;
+    margin-right: 40px;
+    padding-left: 1.9em;
   }
 }
 
@@ -58,10 +55,7 @@
     margin-left: -4.3em;
   }
   .descContainer {
-    justify-content: flex-start;
-    margin-left: 1.8em;
-    padding-right: 43%;
-    bottom: 6rem;
-    position: absolute;
+    margin-right: 40px;
+    padding-left: 1.9em;
   }
 }

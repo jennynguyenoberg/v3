@@ -4,4 +4,24 @@
   height: 100vh;
   justify-content: center;
   background-color: var(--purple);
+  padding: 0 6.2em;
+  transition: .3s;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    margin-left: -4.3em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin-left: -4.3em;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .container {
+    margin-left: -4.3em;
+  }
 }
