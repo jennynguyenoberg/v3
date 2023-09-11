@@ -1,12 +1,10 @@
 'use client';
 import styles from "./contact.module.css";
-import Footer from "../../components/footer/page";
 import Button from "@/app/components/button/page";
-// import { BiSolidCircle } from "react-icons/bi";
 
 export default function Contact() {
   const openEmailWindow = () => {
-    const email = "hello@jennynguyenoberg.com"; // Replace with your email address
+    const email = "hello@jennynguyenoberg.com";
     window.location.href = `mailto:${email}`;
   };
 
@@ -25,7 +23,6 @@ export default function Contact() {
           <Button onClick={openEmailWindow}>hello@jennynguyenoberg.com</Button>
         </div>
       </div>
-      <Footer />
     </>
   );
 }
