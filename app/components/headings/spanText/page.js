@@ -3,8 +3,8 @@ import classNames from "classnames";
 
 export default function SpanText({ children, className, ...props }) {
   return (
-    <div className={classNames(styles.container, className)} {...props}>
+    <span className={classNames(styles.container, className)} {...props}>
       {children}
-    </div>
+    </span>
   );
 }

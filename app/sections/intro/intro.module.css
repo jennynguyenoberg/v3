@@ -1,27 +1,61 @@
 .container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 65vh;
   justify-content: center;
-  background-color: var(--purple);
-  padding: 0 6.2em;
+  padding: 0 10.2em;
   transition: .3s;
+}
+
+.rowWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.paraText {
+  padding-top: 5px;
+  margin-left: 100px;
 }
 
 @media screen and (max-width: 992px) {
   .container {
-    margin-left: -4.3em;
+    padding: 0 5em;
+  }
+  .rowWrapper {
+    flex-wrap: wrap;
+  }
+  .paraText {
+    margin-top: 1em;
+    margin-left: 0;
+    margin-right: 38%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .container {
-    margin-left: -4.3em;
+    padding: 0 2em;
+  }
+  .rowWrapper {
+    flex-wrap: wrap;
+  }
+  .paraText {
+    margin-top: 1em;
+    margin-left: 0;
+    margin-right: 38%;
   }
 }
 
 @media screen and (max-width: 390px) {
   .container {
-    margin-left: -4.3em;
+    padding: 0 2em;
+  }
+  .rowWrapper {
+    flex-wrap: wrap;
+  }
+  .paraText {
+    margin-top: 1em;
+    margin-left: 0;
+    margin-right: 38%;
   }
 }
