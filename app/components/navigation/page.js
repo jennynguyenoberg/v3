@@ -10,24 +10,6 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [shouldCloseMenu, setShouldCloseMenu] = useState(false);
 
-  const navItems = {
-    "/": {
-      img: "/favicon.ico",
-    },
-    "#intro": {
-      name: "About",
-    },
-    "#projects": {
-      name: "Projects",
-    },
-    "https://assignment2-blog.vercel.app/": {
-      name: "Blog",
-    },
-    "#contact": {
-      name: "Contact",
-    },
-  };
-
   const toggleMenu = () => {
     setIsOpen(!isOpen);
     setShouldCloseMenu(false); // Set shouldCloseMenu to false when opening the menu
@@ -55,7 +37,7 @@ export default function Navbar() {
       <nav className={styles.navbar}>
         <div className={styles.logoContainer}>
           <Link href="/">
-            <Image src={navItems["/"].img} alt="Logo" width={32} height={32} />
+            <Image src="/favicon.ico" alt="Logo" width={32} height={32} />
           </Link>
         </div>
         <div className={styles.menuContainer}>
@@ -74,42 +56,53 @@ export default function Navbar() {
                   isOpen ? styles.open : ""
                 }`}
               >
-              {Object.entries(navItems).map(([path, { name }]) => (
                 <DarkLinkItem
-                  key={path}
-                  href={path}
+                  href="/about"
+                  className={classNames(styles.linkItem)}
+                  onClick={() => setShouldCloseMenu(true)}
+                >
+                  <span className={styles.linkName}>About</span>
+                </DarkLinkItem>
+                <DarkLinkItem
+                  href="#projects"
                   className={classNames(styles.linkItem)}
                   onClick={(e) => {
                     e.preventDefault();
-                    // Check if the link is the contact link
-                    if (path === "#contact") {
-                      // Scroll to the bottom of the page
-                      window.scrollTo({
-                        top: document.body.scrollHeight,
+                    // Smooth scroll to the section
+                    const section = document.getElementById("projects");
+                    if (section) {
+                      section.scrollIntoView({
                         behavior: "smooth",
                       });
-                    } else {
-                      // Smooth scroll to the section
-                      const sectionId = path.substring(1);
-                      const section = document.getElementById(sectionId);
-                      if (section) {
-                        section.scrollIntoView({
-                          behavior: "smooth",
-                        });
-                      }
                     }
                     setShouldCloseMenu(true); // Close the menu when a link is clicked
-
-                    // Open the blog link in a new window/tab
-                    if (path === "https://assignment2-blog.vercel.app/") {
-                      window.open(path, "_blank");
-                    }
                   }}
                 >
-                  <span className={styles.linkName}>{name}</span>
+                  <span className={styles.linkName}>Projects</span>
                 </DarkLinkItem>
-))}
-
+                <DarkLinkItem
+                  href="https://assignment2-blog.vercel.app/"
+                  className={classNames(styles.linkItem)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className={styles.linkName}>Blog</span>
+                </DarkLinkItem>
+                <DarkLinkItem
+                  href="#contact"
+                  className={classNames(styles.linkItem)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    // Scroll to the bottom of the page
+                    window.scrollTo({
+                      top: document.body.scrollHeight,
+                      behavior: "smooth",
+                    });
+                    setShouldCloseMenu(true); // Close the menu when a link is clicked
+                  }}
+                >
+                  <span className={styles.linkName}>Contact</span>
+                </DarkLinkItem>
               </ul>
             )}
           </div>
