@@ -21,7 +21,7 @@
   padding-top: .3px;
 }
 
-.descContainer {
+.spanContainer {
   display: flex;
   justify-content: flex-end;
   padding-right: 7.5em;
@@ -34,7 +34,7 @@
     margin-top: 5rem;
     margin-left: -4.3em;
   }
-  .descContainer {
+  .spanContainer {
     margin-right: 40px;
     padding-left: 1.9em;
   }
@@ -44,7 +44,7 @@
   .rowWrapper {
     margin-left: -4.3em;
   }
-  .descContainer {
+  .spanContainer {
     margin-right: 40px;
     padding-left: 1.9em;
   }
@@ -54,7 +54,7 @@
   .rowWrapper {
     margin-left: -4.3em;
   }
-  .descContainer {
+  .spanContainer {
     margin-right: 40px;
     padding-left: 1.9em;
   }

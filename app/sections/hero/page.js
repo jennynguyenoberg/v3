@@ -1,7 +1,7 @@
 import styles from "./hero.module.css";
 import SubHeadingRotate from "@/app/components/headings/subHeadingRotate/page";
 import TitleScroll from "@/app/components/headings/titleScroll/page";
-import DescText from "@/app/components/headings/descText/page";
+import SpanText from "@/app/components/headings/spanText/page";
 
 export default function Hero() {
   return (
@@ -14,8 +14,8 @@ export default function Hero() {
         </SubHeadingRotate>
       </div>
       <TitleScroll />
-      <div className={styles.descContainer}>
-        <DescText>Designer & Developer</DescText>
+      <div className={styles.spanContainer}>
+        <SpanText>Designer & Developer</SpanText>
       </div>
     </div>
   );
