@@ -1,5 +1,5 @@
 import Hero from "./sections/hero/page";
-import About from "./sections/about/page";
+import Intro from "./sections/intro/page";
 import Projects from "./sections/projects/page";
 // import Blog from './blog/page'
 import Contact from "./sections/contact/page";
@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <div className={styles.container}>
         <Hero />
-        <About />
+        <Intro />
         <Projects />
         {/* <Blog /> */}
         <Contact />

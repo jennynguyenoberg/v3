@@ -1,5 +1,5 @@
 import styles from "./hero.module.css";
-import SubHeadingScroll from "@/app/components/headings/subHeadingScroll/page";
+import SubHeadingRotate from "@/app/components/headings/subHeadingRotate/page";
 import TitleScroll from "@/app/components/headings/titleScroll/page";
 import DescText from "@/app/components/headings/descText/page";
 
@@ -8,10 +8,10 @@ export default function Hero() {
     <div className={styles.container}>
       <div className={styles.rowWrapper}>
         <div>↳ Looking for an internship starting in</div>
-        <SubHeadingScroll>
+        <SubHeadingRotate>
           <span>January</span><br />
           <span>2024</span>
-        </SubHeadingScroll>
+        </SubHeadingRotate>
       </div>
       <TitleScroll />
       <DescText>Designer & Developer</DescText>

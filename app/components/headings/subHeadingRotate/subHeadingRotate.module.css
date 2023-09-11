@@ -1,8 +1,8 @@
 .container {
   margin-left: 3.5px;
   border: 0px solid #ddd;
-  height: 16px;
-  line-height: 18px;
+  height: 18px;
+  line-height: 20px;
   overflow: hidden;
   margin-bottom: 2px;
 }
@@ -21,21 +21,21 @@
     top: 0;
   }
   25% {
-    top: -18px;
+    top: -20px;
   }
   45% {
-    top: -18px;
+    top: -20px;
   }
   50% {
-    top: -33px;
+    top: -36px;
   }
   70% {
-    top: -33px;
+    top: -36px;
   }
   75% {
-    top: -70px;
+    top: -72px;
   }
   95% {
-    top: -70px;
+    top: -72px;
   }
 }

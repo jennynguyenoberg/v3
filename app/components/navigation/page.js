@@ -20,7 +20,7 @@ export default function Navbar() {
     "#projects": {
       name: "Projects",
     },
-    "/blog": {
+    "https://assignment2-blog.vercel.app/": {
       name: "Blog",
     },
     "#contact": {
@@ -74,36 +74,42 @@ export default function Navbar() {
                   isOpen ? styles.open : ""
                 }`}
               >
-                {Object.entries(navItems).map(([path, { name }]) => (
-                  <DarkLinkItem
-                    key={path}
-                    href={path}
-                    className={classNames(styles.linkItem)}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      // Check if the link is the contact link
-                      if (path === "#contact") {
-                        // Scroll to the bottom of the page
-                        window.scrollTo({
-                          top: document.body.scrollHeight,
+              {Object.entries(navItems).map(([path, { name }]) => (
+                <DarkLinkItem
+                  key={path}
+                  href={path}
+                  className={classNames(styles.linkItem)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    // Check if the link is the contact link
+                    if (path === "#contact") {
+                      // Scroll to the bottom of the page
+                      window.scrollTo({
+                        top: document.body.scrollHeight,
+                        behavior: "smooth",
+                      });
+                    } else {
+                      // Smooth scroll to the section
+                      const sectionId = path.substring(1);
+                      const section = document.getElementById(sectionId);
+                      if (section) {
+                        section.scrollIntoView({
                           behavior: "smooth",
                         });
-                      } else {
-                        // Smooth scroll to the section
-                        const sectionId = path.substring(1);
-                        const section = document.getElementById(sectionId);
-                        if (section) {
-                          section.scrollIntoView({
-                            behavior: "smooth",
-                          });
-                        }
                       }
-                      setShouldCloseMenu(true); // Close the menu when a link is clicked
-                    }}
-                  >
-                    <span className={styles.linkName}>{name}</span>
-                  </DarkLinkItem>
-                ))}
+                    }
+                    setShouldCloseMenu(true); // Close the menu when a link is clicked
+
+                    // Open the blog link in a new window/tab
+                    if (path === "https://assignment2-blog.vercel.app/") {
+                      window.open(path, "_blank");
+                    }
+                  }}
+                >
+                  <span className={styles.linkName}>{name}</span>
+                </DarkLinkItem>
+))}
+
               </ul>
             )}
           </div>
