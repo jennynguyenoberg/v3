@@ -1,26 +1,4 @@
 .container {
-  display: flex;
-  justify-content: flex-end;
   font-size: 32px;
-  margin-top: 5.5rem;
   letter-spacing: -0.04em;
-  padding-right: 7.5em;
-}
-
-@media screen and (max-width: 992px) {
-  .container {
-    justify-content: flex-start;
-    margin: 0 1em;
-    bottom: 3rem;
-    position: absolute;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .container {
-    justify-content: flex-start;
-    margin: 0 1em;
-    bottom: 3rem;
-    position: absolute;
-  }
 }

@@ -14,7 +14,9 @@ export default function Hero() {
         </SubHeadingRotate>
       </div>
       <TitleScroll />
-      <DescText>Designer & Developer</DescText>
+      <div className={styles.descContainer}>
+        <DescText>Designer & Developer</DescText>
+      </div>
     </div>
   );
 }
