@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import Head from "next/head";
 import Navigation from "./components/navigation/page";
-// import Footer from "./components/footer/page";
+import Footer from "./components/footer/page";
 
 export const metadata = {
   title: "Jenny Nguyen Öberg — Designer & Developer",
@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <body>
         <Navigation />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
