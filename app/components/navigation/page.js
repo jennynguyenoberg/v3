@@ -57,7 +57,7 @@ export default function Navbar() {
                 }`}
               >
                 <DarkLinkItem
-                  href="/about"
+                  href="#intro"
                   className={classNames(styles.linkItem)}
                   onClick={() => setShouldCloseMenu(true)}
                 >
