@@ -8,6 +8,7 @@ import DarkLinkItem from "@/app/components/link/darkLink/page";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [shouldCloseMenu, setShouldCloseMenu] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
