@@ -1,4 +1,4 @@
-.mainContainer {
+.container {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -16,44 +16,24 @@
   flex-direction: row;
   margin-top: 5rem;
   padding-left: 6.2em;
-}
-
-.desc {
-  display: flex;
-  justify-content: flex-end;
-  font-size: 32px;
-  margin-top: 5.5rem;
-  letter-spacing: -0.04em;
-  padding-right: 7.5em;
+  transition: .3s;
 }
 
 @media screen and (max-width: 992px) {
-  .desc {
-    justify-content: flex-start;
-    margin: 0 1em;
-    bottom: 3rem;
-    position: absolute;
-  }
   .rowWrapper {
     margin-top: 1rem;
-    margin-left: -1em;
+    margin-left: -4.3em;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .desc {
-    justify-content: flex-start;
-    margin: 0 1em;
-    bottom: 3rem;
-    position: absolute;
-  }
   .rowWrapper {
-    margin-left: -1em;
+    margin-left: -4.3em;
   }
 }
 
 @media screen and (max-width: 390px) {
   .rowWrapper {
-    margin-left: -1em;
+    margin-left: -4.3em;
   }
 }

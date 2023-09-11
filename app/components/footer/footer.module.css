@@ -1,4 +1,4 @@
-.mainContainer {
+.container {
   background-color: var(--charcoal);
 }
 
@@ -10,7 +10,8 @@
   font-size: 14px;
   color: white;
   letter-spacing: -0.01em;
-  border-top: 1px solid #dfdfdf;
+  border-top: 1px solid var(--gray);
+  gap: 18px;
 }
 
 .footerLinksLeft,
@@ -18,37 +19,10 @@
   display: flex;
   list-style-type: none;
   gap: 18px;
-  padding-bottom: 1.5rem;
 }
 
-.bottom {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  background-color: var(--charcoal);
-}
-
-.bottomScroll {
-  white-space: nowrap;
-}
-
-.title {
-  /* font-family: 'Playfair Display', serif; */
+.titleScroll {
   color: white;
-  font-size: 12rem;
-  letter-spacing: -0.8rem;
-  margin-bottom: 4rem;
-  height: 8vh;
-  padding-top: 15px;
-  /* font-style: italic; */
-  animation: left-to-right 50s infinite linear;
-}
-
-@keyframes left-to-right {
-  from {
-    transform: translateX(-0%);
-  }
-  to {
-    transform: translateX(-50%);
-  }
+  height: 20vh;
+  padding-top: 50px;
 }

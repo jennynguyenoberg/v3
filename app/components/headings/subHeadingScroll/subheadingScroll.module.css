@@ -1,4 +1,4 @@
-.subheading {
+.container {
   margin-left: 3.5px;
   border: 0px solid #ddd;
   height: 16px;
@@ -7,7 +7,7 @@
   margin-bottom: 2px;
 }
 
-.subheading span {
+.container span {
   position: relative;
   animation: rotate-animation 6s ease-in-out infinite;
 }
@@ -38,16 +38,4 @@
   95% {
     top: -70px;
   }
-}
-
-@media screen and (max-width: 992px) {
-
-}
-
-@media screen and (max-width: 600px) {
-
-}
-
-@media screen and (max-width: 390px) {
-
 }
