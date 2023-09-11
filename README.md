@@ -13,8 +13,9 @@
   <a href="https://github.com/jennynguyenoberg/assignment5-javascript-frameworks" target="_blank">v2</a>
 </p>
 
-
-![Image of portfolio website](https://github.com/jennynguyenoberg/v3/blob/main/public/portfolio-hero.gif?raw=true)
+<div align="center">
+<img alt="Image of portfolio" src="https://github.com/jennynguyenoberg/v3/assets/116844306/3ae3e676-8d36-4e33-90c7-5b71d8e5c7a0" width="100%" />
+</div>
 
 ## Getting started
 
