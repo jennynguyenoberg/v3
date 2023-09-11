@@ -14,7 +14,7 @@ export default function Navbar() {
     "/": {
       img: "/favicon.ico",
     },
-    "#about": {
+    "#intro": {
       name: "About",
     },
     "#projects": {
