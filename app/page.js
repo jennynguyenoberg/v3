@@ -2,7 +2,7 @@ import Hero from "./sections/hero/page";
 import Intro from "./sections/intro/page";
 import Projects from "./sections/projects/page";
 // import Blog from './blog/page'
-import Contact from "./sections/contact/page";
+// import Contact from "./sections/contact/page";
 import styles from "../styles/home.module.css";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
         <Intro />
         <Projects />
         {/* <Blog /> */}
-        <Contact />
+        {/* <Contact /> */}
       </div>
     </>
   );
