@@ -1,5 +1,5 @@
 .container {
-  padding: 7em 10em;
+  padding: 6em 10em;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -20,6 +20,11 @@
 .greetingHead {
   font-size: 82px;
   letter-spacing: -0.04em;
+  line-height: 0.9em;
+}
+
+.greetingSub {
+  padding-left: 0.5em;
 }
 
 .contactButton {

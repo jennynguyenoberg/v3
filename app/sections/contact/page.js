@@ -1,4 +1,5 @@
 'use client';
+import ParagraphText from "@/app/components/headings/paragraphText/page";
 import styles from "./contact.module.css";
 import Button from "@/app/components/button/page";
 
@@ -13,11 +14,11 @@ export default function Contact() {
       <div className={styles.container}>
         <div className={styles.greeting}>
           <p className={styles.greetingHead}>{`Let's connect!`}</p>
-          <p className={styles.greetingSub}>{`
+          <ParagraphText className={styles.greetingSub}>{`
             Available for internship starting January 2024 or for freelance work. 
             Let's grab a ☕️ and talk about your upcoming web or design project!
           `}
-          </p>
+          </ParagraphText>
         </div>
         <div className={styles.contactButton}>
           <Button onClick={openEmailWindow}>hello@jennynguyenoberg.com</Button>

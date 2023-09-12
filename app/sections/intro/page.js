@@ -9,14 +9,16 @@ export default function Intro() {
         <div className={styles.rowWrapper}>
           <div>
             <SpanText>{`
-              Designer & Developer student based in 
+              Experienced designer & developer student based in 
               beautiful Stockholm, Sweden. Creative at 
               heart with a passion for the details.
               `}
             </SpanText>
           </div>
           <div className={styles.paraText}>
-            <ParagraphText>Combining a creative flair and a knack of visual communication with some technical wizardry.
+            <ParagraphText>
+              Combining a creative flair and a knack for
+              visual communication with some technical wizardry.
             </ParagraphText>
           </div>
         </div>
