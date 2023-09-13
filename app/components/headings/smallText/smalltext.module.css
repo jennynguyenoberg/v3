@@ -1,0 +1,6 @@
+.container {
+  font-size: 10px;
+  letter-spacing: .01em;
+  color: var(--light-gray);
+  text-transform: uppercase;
+}

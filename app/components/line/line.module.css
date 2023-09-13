@@ -1,0 +1,10 @@
+.container {
+  border-top: 1px solid #d9d9d9;
+}
+
+.spaceTop {
+  padding-top: 4%;
+}
+.spaceBottom {
+  padding-bottom: 4%;
+}

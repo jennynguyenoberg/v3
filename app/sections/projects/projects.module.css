@@ -1,11 +1,15 @@
 .container {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* height: 65vh; */
+  /* justify-content: flex-start; */
+  padding: 0 10.2em;
+  transition: .3s;
+}
+
+.subContainer {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  justify-content: center;
-  background-color: var(--light-blue);
-  padding: 0 6.2em;
-  transition: .3s;
 }
 
 @media screen and (max-width: 992px) {
