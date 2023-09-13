@@ -11,6 +11,18 @@ const projectsData = [
     heading: 'Heading 2',
     subheading: 'Subheading 2',
   },
+  {
+    id: 3,
+    image: '/images/image1.jpg',
+    heading: 'Heading 3',
+    subheading: 'Subheading 3',
+  },
+  {
+    id: 4,
+    image: '/images/image1.jpg',
+    heading: 'Heading 4',
+    subheading: 'Subheading 4',
+  },
 
 ];
 

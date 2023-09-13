@@ -3,7 +3,6 @@
   flex-direction: column;
   padding: 0 10.2em;
   transition: .3s;
-  background-color: blueviolet;
 }
 
 .subContainer {
@@ -11,9 +10,11 @@
 }
 
 .items {
-  display: flex;
-  gap: 3em;
-  padding-bottom: 3em;
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 7em 3em;
+  padding-bottom: 10em;
 }
 
 .projectItem {
@@ -31,7 +32,10 @@
     margin: 0 -5em;
   }
   .items {
-    flex-wrap: wrap;
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 3em; 
   }
 }
 
@@ -41,12 +45,18 @@
   }
   
   .items {
-    flex-wrap: wrap;
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 3em; 
   }
 }
 
 @media screen and (max-width: 390px) {
   .items {
-    flex-wrap: wrap;
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 3em;
   }
 }
