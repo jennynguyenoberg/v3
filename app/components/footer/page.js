@@ -1,6 +1,6 @@
 import styles from './footer.module.css';
 import LightLinkItem from '../link/lightLink/page';
-import footerData from '../../config/footerData';
+import footerData from '../../utils/footerData';
 import TitleScroll from '../headings/titleScroll/page';
 
 export default function Footer() {

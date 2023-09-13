@@ -1,5 +1,5 @@
 import Link from "next/link";
-import data from "@/app/config/projectsdata";
+import data from "@/app/utils/projectsdata";
 import Image from "next/legacy/image";
 import Line from "../components/line/page";
 import SpanText from "../components/headings/spanText/page";
