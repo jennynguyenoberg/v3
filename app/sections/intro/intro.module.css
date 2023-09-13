@@ -20,7 +20,7 @@
 
 @media screen and (max-width: 992px) {
   .container {
-    padding: 0 5em;
+    padding: 5em 5em;
   }
   .rowWrapper {
     flex-wrap: wrap;
@@ -34,7 +34,7 @@
 
 @media screen and (max-width: 600px) {
   .container {
-    padding: 0 2em;
+    padding: 5em 2em;
   }
   .rowWrapper {
     flex-wrap: wrap;
@@ -48,7 +48,7 @@
 
 @media screen and (max-width: 390px) {
   .container {
-    padding: 0 2em;
+    padding: 15em 2em;
   }
   .rowWrapper {
     flex-wrap: wrap;
