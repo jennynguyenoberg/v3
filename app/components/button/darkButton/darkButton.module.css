@@ -9,7 +9,7 @@
   line-height: .5em;
   position: relative;
   overflow: hidden;
-  border: 1px solid var(--charcoal);
+  border: 1px solid var(--light-gray);
   transition: color .2s;
   z-index: 1;
   font-size: 17px;

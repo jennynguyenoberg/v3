@@ -14,7 +14,11 @@
   grid-template-columns: 1fr 1fr; 
   grid-template-rows: 1fr 1fr; 
   gap: 7em 3em;
-  padding-bottom: 10em;
+  padding-bottom: 3.5em;
+}
+
+.projectItem:hover {
+  opacity: 0.75;
 }
 
 .projectItem {
@@ -29,6 +33,17 @@
 
 .heading {
   margin-top: 1.4em;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 7em;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 992px) {
