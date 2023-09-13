@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "./navigation.module.css";
 import classNames from "classnames";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import DarkLinkItem from "@/app/components/link/darkLink/page";
 
 export default function Navbar() {
