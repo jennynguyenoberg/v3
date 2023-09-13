@@ -6,13 +6,13 @@ import SpanText from "../components/headings/spanText/page";
 import ParagraphText from "../components/headings/paragraphText/page";
 import styles from "@/app/sections/projects/projects.module.css";
 
-export default function ProjectsDataList() {
+export default function Projects() {
   return (
     <div className={styles.items}>
       {data.map((item) => (
         <div key={item.id} className={styles.projectItem}>
           <Link href={`/projects/${item.id}`}>
-            <a className={styles.link}>
+            <div className={styles.link}>
               <Image
                 src={item.image}
                 alt={item.heading}
@@ -21,20 +21,16 @@ export default function ProjectsDataList() {
                 layout="responsive"
                 className={styles.projectImage}
               />
-            </a>
+            </div>
           </Link>
           <div className={styles.heading}>
-            <Link href={`/projects/${item.id}`}>
-              <a className={styles.link}>
-                <SpanText>{item.heading}</SpanText>
-              </a>
+            <Link href={`/projects/${item.id}`} className={styles.link}>
+              <SpanText>{item.heading}</SpanText>
             </Link>
           </div>
           <Line />
-          <Link href={`/projects/${item.id}`}>
-            <a className={styles.link}>
-              <ParagraphText>{item.subheading}</ParagraphText>
-            </a>
+          <Link href={`/projects/${item.id}`} className={styles.link}>
+            <ParagraphText>{item.subheading}</ParagraphText>
           </Link>
         </div>
       ))}

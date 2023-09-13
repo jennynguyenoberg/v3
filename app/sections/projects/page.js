@@ -1,7 +1,7 @@
 import SpanText from "@/app/components/headings/spanText/page";
 import styles from "./projects.module.css";
 import SmallText from "@/app/components/headings/smallText/page";
-import DataList from "@/app/utils/ProjectsDataList";
+import DataList from "@/app/projects/page";
 
 export default function Projects() {
   return (
