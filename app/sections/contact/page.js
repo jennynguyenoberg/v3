@@ -2,6 +2,7 @@
 import ParagraphText from "@/app/components/headings/paragraphText/page";
 import styles from "./contact.module.css";
 import LightButton from "@/app/components/button/lightButton/page";
+import TitleText from "@/app/components/headings/titleText/page";
 
 export default function Contact() {
   const openEmailWindow = () => {
@@ -13,7 +14,7 @@ export default function Contact() {
     <>
       <div className={styles.container}>
         <div className={styles.greeting}>
-          <p className={styles.greetingHead}>{`Let's connect!`}</p>
+          <TitleText>{`Let's connect!`}</TitleText>
           <ParagraphText className={styles.greetingSub}>{`
             Available for internship starting January 2024 or for freelance work. 
             Let's grab a ☕️ and talk about your upcoming web or design project!

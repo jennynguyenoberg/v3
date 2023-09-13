@@ -17,12 +17,6 @@
   gap: 30px;
 }
 
-.greetingHead {
-  font-size: 82px;
-  letter-spacing: -0.04em;
-  line-height: 0.9em;
-}
-
 .greetingSub {
   padding-left: 0.5em;
   color: white !important;
