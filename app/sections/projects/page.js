@@ -15,31 +15,34 @@ export default function Projects() {
         <SmallText>Selected work</SmallText>
       </div>
       <div className={styles.items}>
-        {data.map((item) => (
-          <div key={item.id} className={styles.projectItem}>
-            <Link href={`/projects/${item.id}`}>
-              <div className={styles.link}>
-                <Image
-                  src={item.image}
-                  alt={item.heading}
-                  width={300}
-                  height={200}
-                  layout="responsive"
-                  className={styles.projectImage}
+        {data.map((item) => {
+          const firstImage = item.images.find(() => true);
+          return (
+            <div key={item.id} className={styles.projectItem}>
+              <Link href={`/projects/${item.id}`}>
+                <div className={styles.link}>
+                  <Image
+                    src={firstImage.url}
+                    alt={firstImage.alt}
+                    width={300}
+                    height={200}
+                    layout="responsive"
+                    className={styles.projectImage}
                   />
+                </div>
+              </Link>
+              <div className={styles.heading}>
+                <Link href={`/projects/${item.id}`} className={styles.link}>
+                  <SpanText>{item.heading}</SpanText>
+                </Link>
               </div>
-            </Link>
-            <div className={styles.heading}>
+              <Line />
               <Link href={`/projects/${item.id}`} className={styles.link}>
-                <SpanText>{item.heading}</SpanText>
+                <ParagraphText>{item.subheading}</ParagraphText>
               </Link>
             </div>
-            <Line />
-            <Link href={`/projects/${item.id}`} className={styles.link}>
-              <ParagraphText>{item.subheading}</ParagraphText>
-            </Link>
-          </div>
-        ))}
+          );
+        })}
       </div>
       <Link href={`/projects`} className={styles.button}>
         <DarkButton>All projects</DarkButton>
