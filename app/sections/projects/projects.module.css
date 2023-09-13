@@ -27,6 +27,10 @@
   height: 200px;
 }
 
+.heading {
+  margin-top: 1.4em;
+}
+
 @media screen and (max-width: 992px) {
   .container {
     margin: 0 -5em;

@@ -18,7 +18,9 @@ export default function ProjectsDataList() {
             layout="responsive"
             className={styles.projectImage}
           />
-          <SpanText>{item.heading}</SpanText>
+          <div className={styles.heading}>
+            <SpanText>{item.heading}</SpanText>
+          </div>
           <Line />
           <ParagraphText>{item.subheading}</ParagraphText>
         </div>
