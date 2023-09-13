@@ -1,3 +1,5 @@
+/* projects.module.css */
+
 .container {
   display: flex;
   flex-direction: column;
@@ -8,18 +10,22 @@
 
 .link {
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .line {
-  margin: -1em 0 !important;
+  height: 1px;
+  padding-bottom: 1.4em;
 }
- 
+
 .projectItem {
   display: flex;
+  flex-direction: row; /* Change to column */
   align-items: center;
-  justify-content: space-between;
   position: relative;
-  padding: 2em 0;
+  padding: 2em 2em;
+  gap: 6em;
 }
 
 .projectItem::after {
@@ -27,13 +33,29 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%; /* 100% width for a horizontal line */
-  height: 1px; /* Adjust the height as needed */
-  background-color: var(--border-gray); /* Adjust the color as needed */
+  width: 100%;
+  height: 1px;
+  background-color: var(--border-gray);
 }
 
 .projectItem:hover {
   opacity: 0.3;
+}
+
+.heading {
+  background-color: blue;
+}
+
+.columnClient {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.projectInfo {
+  display: flex;
+  background-color: blueviolet;
+  justify-content: space-around;
+  gap: 10em;
 }
 
 @media screen and (max-width: 992px) {
@@ -60,5 +82,6 @@
   }
   .line {
     margin: -0.5em 0 !important;
+ 
   }
 }
