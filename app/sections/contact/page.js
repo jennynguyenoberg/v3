@@ -1,7 +1,7 @@
 'use client';
 import ParagraphText from "@/app/components/headings/paragraphText/page";
 import styles from "./contact.module.css";
-import Button from "@/app/components/button/page";
+import LightButton from "@/app/components/button/lightButton/page";
 
 export default function Contact() {
   const openEmailWindow = () => {
@@ -21,7 +21,7 @@ export default function Contact() {
           </ParagraphText>
         </div>
         <div className={styles.contactButton}>
-          <Button onClick={openEmailWindow}>hello@jennynguyenoberg.com</Button>
+          <LightButton onClick={openEmailWindow}>hello@jennynguyenoberg.com</LightButton>
         </div>
       </div>
     </>

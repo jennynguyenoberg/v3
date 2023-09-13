@@ -2,6 +2,7 @@ import SpanText from "@/app/components/headings/spanText/page";
 import styles from "./projects.module.css";
 import SmallText from "@/app/components/headings/smallText/page";
 import DataList from "@/app/projects/page";
+import DarkButton from "@/app/components/button/darkButton/page";
 
 export default function Projects() {
   return (
@@ -11,6 +12,7 @@ export default function Projects() {
           <SmallText>Selected work</SmallText>
         </div>
         <DataList />
+        <DarkButton>All projects</DarkButton>
       </div>
     </>
   );

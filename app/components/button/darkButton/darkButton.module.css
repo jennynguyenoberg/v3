@@ -1,0 +1,52 @@
+.main {
+  display: flex;
+}
+
+.container {
+  font-family: 'MaisonNeue-Book', sans-serif;
+  width: 100%;
+  height: 75px;
+  line-height: .5em;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--charcoal);
+  transition: color .2s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 60px;
+  color: var(--charcoal);
+  background-color: transparent;
+  padding: 6px 45px 0 45px;
+}
+
+.container:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--purple);
+  height: 290px;
+  width: 650px;
+  border-radius: 50%;
+  transition: 1s;
+}
+
+.container:hover {
+  border: none;
+  color: white;
+}
+
+.container:before {
+  top: 100%;
+  left: 100%;
+  transition: all .8s;
+}
+
+.container:hover:before {
+  top: -65px;
+  left: -65px;
+}
+
+.container:active:before {
+  background: var(--charcoal);
+  transition: background 0s;
+ }
