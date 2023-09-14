@@ -1,5 +1,6 @@
 .container {
   padding: 8em 8em;
+  transition: .3s;
 }
 
 .subTitle {
@@ -41,10 +42,6 @@
   flex: 30%;
 }
 
-.contentDel {
-  padding-right: 2em;
-}
-
 .contentLoc,
 .columnThree {
   flex: 25%;
@@ -55,7 +52,6 @@
   flex: 8%;
   display: flex;
   justify-content: flex-start;
-  padding-right: 2em;
 }
 
 .button {
@@ -67,7 +63,16 @@
 
 @media screen and (max-width: 992px) {
   .container {
-    padding: 8em 2em;
+    padding: 0em 2em;
+  }
+  .contentClient {
+    font-size: 2em;
+  }
+
+  .contentProject,
+  .contentTitle,
+  .subTitle  {
+    padding: 0;
   }
 
   .contentDel,
@@ -75,16 +80,5 @@
   .contentLoc,
   .columnThree {
     opacity: 0;
-  }
-
-  .columnFour {
-    background-color: aquamarine;
-    padding-right: 4em;
-  }
-
-  .contentYear {
-    background-color: blue;
-    margin-left: -6em;
-    flex-wrap: wrap;
   }
 }
