@@ -33,13 +33,18 @@ export default function Projects() {
               </Link>
               <div className={styles.heading}>
                 <Link href={`/projects/${item.id}`} className={styles.link}>
-                  <SpanText>{item.heading}</SpanText>
+                  <SpanText>{item.client}</SpanText>
                 </Link>
               </div>
               <Line />
-              <Link href={`/projects/${item.id}`} className={styles.link}>
-                <ParagraphText>{item.subheading}</ParagraphText>
-              </Link>
+              <div className={styles.subHeading}>
+                <Link href={`/projects/${item.id}`} className={styles.link}>
+                  <ParagraphText>{item.deliverables}</ParagraphText>
+                </Link>
+                <Link href={`/projects/${item.id}`} className={styles.link}>
+                  <ParagraphText>{item.year}</ParagraphText>
+                </Link>
+              </div>
             </div>
           );
         })}

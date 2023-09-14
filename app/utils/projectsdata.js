@@ -88,7 +88,7 @@ const projectsData = [
     role: 'Designer',
     year: '2023',
     location: 'Stockholm',
-    deliverables: 'Brand Identity, Packaging',
+    deliverables: 'Brand Identity & Packaging',
     client: 'Bestclient.com',
     specs: 'https://jennynguyenoberg.com',
     site: 'https://jennynguyenoberg.com',

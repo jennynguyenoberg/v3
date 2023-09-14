@@ -35,6 +35,12 @@
   margin-top: 1.4em;
 }
 
+.subHeading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .link {
   text-decoration: none;
 }
@@ -42,7 +48,8 @@
 .button {
   display: flex;
   justify-content: center;
-  padding-bottom: 7em;
+  padding-top: 2em;
+  padding-bottom: 8em;
   text-decoration: none;
 }
 
