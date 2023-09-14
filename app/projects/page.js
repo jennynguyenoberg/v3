@@ -24,16 +24,12 @@ export default function Projects() {
         <React.Fragment key={item.id}>
           {index > 0 && <Line />}
           <div className={styles.contentProject}>
-            {item.link ? (
-              <Link href={item.link} className={styles.link}>
-                <SpanText className={styles.contentClient}>{item.client}</SpanText>
-              </Link>
-            ) : (
+            <Link href={`/projects/${item.id}`} className={styles.link}>
               <SpanText className={styles.contentClient}>{item.client}</SpanText>
-            )}
-            <ParagraphText className={styles.contentDel}>{item.deliverables}</ParagraphText>
-            <ParagraphText className={styles.contentLoc}>{item.location}</ParagraphText>
-            <ParagraphText className={styles.contentYear}>{item.year}</ParagraphText>
+              <ParagraphText className={styles.contentDel}>{item.deliverables}</ParagraphText>
+              <ParagraphText className={styles.contentLoc}>{item.location}</ParagraphText>
+              <ParagraphText className={styles.contentYear}>{item.year}</ParagraphText>
+            </Link>
           </div>
         </React.Fragment>
       ))}
