@@ -1,87 +1,70 @@
-/* projects.module.css */
-
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-  padding: 0 10.2em;
+  padding: 8em 8em;
 }
 
 .link {
   text-decoration: none;
-  display: flex;
-  justify-content: space-between;
 }
 
-.line {
-  height: 1px;
-  padding-bottom: 1.4em;
+.button {
+  display: flex;
+  justify-content: center;
+  padding-top: 4em;
+  text-decoration: none;
 }
 
-.projectItem {
+.subTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 65px;
+  font-style: italic;
+  margin-bottom: 1.5em;
+  padding-left: .7em;
+}
+
+.contentProject,
+.contentTitle {
   display: flex;
-  flex-direction: row; /* Change to column */
+  flex-direction: row;
+  justify-content: left;
   align-items: center;
-  position: relative;
-  padding: 2em 2em;
-  gap: 6em;
+  padding-left: 2em;
 }
 
-.projectItem::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: var(--border-gray);
+.contentClient,
+.columnOne {
+  flex: 35%;
 }
 
-.projectItem:hover {
-  opacity: 0.3;
+.contentDel,
+.columnTwo {
+  flex: 26%;
 }
 
-.heading {
-  background-color: blue;
+.contentDel {
+  padding-right: 2em;
 }
 
-.columnClient {
+.contentLoc,
+.columnThree {
+  flex: 16%;
+}
+
+.contentYear,
+.columnFour {
+  flex: 6%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  padding-right: 2em;
 }
 
-.projectInfo {
-  display: flex;
-  background-color: blueviolet;
-  justify-content: space-around;
-  gap: 10em;
+.contentProject:hover {
+  cursor: pointer;
+  opacity: 0.2;
 }
 
 @media screen and (max-width: 992px) {
   .container {
-    padding: 5em 5em;
-  }
-  .line {
-    margin: -0.5em 0 !important;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .container {
-    padding: 5em 2em;
-  }
-  .line {
-    margin: -0.5em 0 !important;
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .container {
-    padding: 15em 2em;
-  }
-  .line {
-    margin: -0.5em 0 !important;
- 
+    padding: 8em 2em;
+    flex-wrap: wrap;
   }
 }
