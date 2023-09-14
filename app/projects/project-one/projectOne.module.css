@@ -5,61 +5,51 @@
 
 .header {
   font-family: 'Playfair Display', serif;
-  font-size: 80px;
+  font-size: 65px;
   font-style: italic;
   margin-bottom: 1.5em;
   padding-left: .7em;
-  letter-spacing: -.045em;
 }
 
-.link {
-  text-decoration: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: center;
-  flex: 0%;
-}
-
-.contentProject,
-.contentTitle {
+.contentTitle,
+.contentProject {
   display: flex;
   align-items: center;
   padding-left: 2em;
 }
 
-.contentProject:hover {
-  cursor: pointer;
-  opacity: 0.2;
-}
-
-.contentClient,
-.columnOne {
-  flex: 50%;
-}
-
-.contentDel,
-.columnTwo {
-  flex: 30%;
-}
-
-.contentLoc,
-.columnThree {
+.columnOne,
+.contentYear {
   flex: 25%;
 }
 
-.contentYear,
-.columnFour {
-  flex: 8%;
+.columnTwo,
+.contentDel {
+  flex: 25%;
+}
+
+.columnThree,
+.contentLoc {
+  flex: 25%;
+}
+
+.columnFour,
+.contentSite {
+  flex: 25%;
+}
+
+.brief {
+  width: 50%;
+  margin: 4em 2em 0;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .button {
   display: flex;
   justify-content: center;
   padding-top: 3em;
-  /* padding-bottom: 8em; */
   text-decoration: none;
 }
 
@@ -67,14 +57,18 @@
   .container {
     padding: 6em 2em;
   }
-  .contentClient {
-    font-size: 2em;
-  }
 
   .contentProject,
   .contentTitle,
-  .header  {
+  .header,
+  .contentBrief {
     padding: 0;
+  }
+
+  .contentSite,
+  .columnFour {
+    display: flex;
+    justify-content: flex-end;
   }
 
   .contentDel,
@@ -82,5 +76,12 @@
   .contentLoc,
   .columnThree {
     opacity: 0;
+    width: 0%;
+  }
+
+  .brief {
+    width: 100%;
+    margin: 0;
+    padding-top: 3em;
   }
 }

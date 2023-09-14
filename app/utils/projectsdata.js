@@ -22,7 +22,7 @@ const projectsData = [
     location: 'Stockholm',
     deliverables: 'Development',
     client: 'Project 1',
-    specs: 'https://jennynguyenoberg.com',
+    specs: 'React.js',
     site: 'https://jennynguyenoberg.com',
     github: 'https://jennynguyenoberg.com',
     brief: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie ac feugiat sed lectus vestibulum. Faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Quis viverra nibh cras pulvinar mattis.'
@@ -46,7 +46,7 @@ const projectsData = [
     location: 'Stockholm',
     deliverables: 'Design & Development',
     client: 'Project 2',
-    specs: 'https://jennynguyenoberg.com',
+    specs: 'React.js',
     site: 'https://jennynguyenoberg.com',
     github: 'https://jennynguyenoberg.com',
     brief: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie ac feugiat sed lectus vestibulum. Faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Quis viverra nibh cras pulvinar mattis.'
@@ -66,7 +66,7 @@ const projectsData = [
     location: 'Stockholm',
     deliverables: 'Packaging',
     client: 'Project 3',
-    specs: 'https://jennynguyenoberg.com',
+    specs: 'React.js',
     site: 'https://jennynguyenoberg.com',
     github: 'https://jennynguyenoberg.com',
     brief: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie ac feugiat sed lectus vestibulum. Faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Quis viverra nibh cras pulvinar mattis.'
@@ -90,7 +90,7 @@ const projectsData = [
     location: 'Stockholm',
     deliverables: 'Brand Identity & Packaging',
     client: 'Project 4',
-    specs: 'https://jennynguyenoberg.com',
+    specs: 'React.js',
     site: 'https://jennynguyenoberg.com',
     github: 'https://jennynguyenoberg.com',
     brief: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie ac feugiat sed lectus vestibulum. Faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Quis viverra nibh cras pulvinar mattis.'

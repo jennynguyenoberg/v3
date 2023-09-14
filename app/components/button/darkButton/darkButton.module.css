@@ -13,7 +13,8 @@
   border: 1px solid var(--border-gray);
   transition: color .2s;
   z-index: 1;
-  font-size: 17px;
+  font-size: 16px;
+  letter-spacing: -0.03em;
   border-radius: 60px;
   color: var(--charcoal);
   background-color: transparent;

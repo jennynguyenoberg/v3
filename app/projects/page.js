@@ -1,24 +1,23 @@
 import React from 'react';
 import Link from 'next/link';
-import DarkButton from "../components/button/darkButton/page";
-import ParagraphText from "../components/headings/paragraphText/page";
-import SmallText from "../components/headings/smallText/page";
-import SpanText from "../components/headings/spanText/page";
-import Line from "../components/line/page";
+import DarkButton from "@/app/components/button/darkButton/page";
+import ParagraphText from "@/app/components/headings/paragraphText/page";
+import SmallText from "@/app/components/headings/smallText/page";
+import SpanText from "@/app/components/headings/spanText/page";
+import Line from "@/app/components/line/page";
 import styles from "./projects.module.css";
 import data from "@/app/utils/projectsdata";
 
 export default function Projects() {
   return (
     <div className={styles.container}>
-      <div className={styles.subTitle}>All projects</div>
-      <span className={styles.contentTitle}>
+      <div className={styles.header}>All projects</div>
+      <div className={styles.contentTitle}>
         <SmallText className={styles.columnOne}>Client</SmallText>
         <SmallText className={styles.columnTwo}>Deliverables</SmallText>
         <SmallText className={styles.columnThree}>Location</SmallText>
         <SmallText className={styles.columnFour}>Year</SmallText>
-        <div className={styles.contentDesc}></div>
-      </span>
+      </div>
       <Line />
       {data.map((item, index) => (
         <React.Fragment key={item.id}>

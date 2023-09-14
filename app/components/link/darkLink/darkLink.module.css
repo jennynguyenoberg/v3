@@ -3,6 +3,7 @@
   display: inline-block;
   position: relative;
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* Underline aninmation */
