@@ -70,7 +70,7 @@ export default function About() {
         <div className={styles.resume}>
           <a
             href="/resume.pdf"
-            download="Jenny_Nguyen_Öberg_resume.pdf"
+            download="resume.pdf"
             style={{ width: '300px', height: '300px', display: 'flex', justifyContent: 'center', alignItems: 'center', color: 'inherit', textDecoration: 'none' }}
           >
             Download resume

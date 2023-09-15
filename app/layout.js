@@ -6,11 +6,12 @@ import Footer from "./components/footer/page";
 import Contact from "./sections/contact/page";
 import React, { useEffect, useState } from "react";
 
+const metadata = {
+  title: "Jenny Nguyen Öberg — Designer & Developer",
+  description: "Portfolio of Jenny Nguyen Öberg",
+};
+
 export default function RootLayout({ children }) {
-  const metadata = {
-    title: "Jenny Nguyen Öberg — Designer & Developer",
-    description: "Portfolio of Jenny Nguyen Öberg",
-  };
   
   const [highlightColor, setHighlightColor] = useState("#8b80e5");
   
@@ -28,7 +29,6 @@ export default function RootLayout({ children }) {
       window.removeEventListener("mousedown", handleMouseDown);
     };
   }, []);
-
 
   return (
     <html lang="en">
