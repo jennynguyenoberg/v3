@@ -4,12 +4,8 @@
 }
 
 .header {
-  font-family: 'Playfair Display', serif;
-  font-size: 80px;
-  font-style: italic;
-  margin-bottom: 1.5em;
-  padding-left: .7em;
-  letter-spacing: -.045em;
+  padding-left: 1.6em;
+  padding-bottom: 6em;
 }
 
 .link {
@@ -67,8 +63,13 @@
   .container {
     padding: 6em 2em;
   }
+
   .contentClient {
     font-size: 2em;
+  }
+
+  .header {
+    margin-bottom: 4em;
   }
 
   .contentProject,

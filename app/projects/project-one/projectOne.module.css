@@ -1,14 +1,11 @@
 .container {
-  padding: 6em 8.2em 10em 8.2em;
+  padding: 6em 8.2em 7em 8.2em;
   transition: .3s;
 }
 
 .header {
-  font-family: 'Playfair Display', serif;
-  font-size: 65px;
-  font-style: italic;
-  margin-bottom: 1.5em;
-  padding-left: .7em;
+  padding-left: 1.6em;
+  padding-bottom: 6em;
 }
 
 .contentTitle,
@@ -66,9 +63,14 @@
 
   .contentProject,
   .contentTitle,
-  .header,
   .contentBrief {
     padding: 0;
+  }
+
+  .header {
+    padding: 0;
+    margin-left: -.5em;
+    margin-bottom: 4em;
   }
 
   .contentSite,

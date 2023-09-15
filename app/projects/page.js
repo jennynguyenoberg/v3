@@ -7,11 +7,14 @@ import SpanText from "@/app/components/headings/spanText/page";
 import Line from "@/app/components/line/page";
 import styles from "./projects.module.css";
 import data from "@/app/utils/projectsdata";
+import TitleText from '../components/headings/titleText/page';
 
 export default function Projects() {
   return (
     <div className={styles.container}>
-      <div className={styles.header}>All projects</div>
+      <div className={styles.header}>
+        <TitleText >All projects</TitleText>
+      </div>
       <div className={styles.contentTitle}>
         <SmallText className={styles.columnOne}>Client</SmallText>
         <SmallText className={styles.columnTwo}>Deliverables</SmallText>

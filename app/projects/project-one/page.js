@@ -8,6 +8,7 @@ import styles from './projectOne.module.css';
 import data from '@/app/utils/projectsdata';
 import DarkLinkItem from '@/app/components/link/darkLink/page';
 import Image from "next/legacy/image";
+import TitleText from '@/app/components/headings/titleText/page';
 
 export default function ProjectOne() {
   const projectIdToShow = 'project-one';
@@ -20,7 +21,9 @@ export default function ProjectOne() {
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.header}>{project.client}</div>
+        <div className={styles.header}>
+          <TitleText>{project.client}</TitleText>
+        </div>
         <div className={styles.contentTitle}>
           <SmallText className={styles.columnOne}>Year</SmallText>
           <SmallText className={styles.columnTwo}>Specifications</SmallText>
