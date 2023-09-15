@@ -1,8 +1,97 @@
 .container {
-  padding: 8em 10.2em;
+  padding: 10em 8.2em 10em 8.2em;
+  transition: 0.3s;
+}
+
+.header {
+  padding-left: 1.6em;
+  padding-bottom: 6em;
+}
+
+.contentContainer,
+.skillsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 5em;
+  padding: 3em 2em;
+  flex-wrap: nowrap;
+}
+
+.skillsContainer {
+  align-items: center;
+}
+
+.textContainer {
+  width: 40%;
   display: flex;
   flex-direction: column;
-  /* height: 100vh; */
+  gap: 3em;
+}
+
+.image {
+  width: 60%;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.image:hover {
+  filter: none;
+}
+
+.subtitle {
+  padding-bottom: 2em;
+}
+
+.resume {
+  background-color: var(--light-blue);
+  border-radius: 100%;
+  color: var(--charcoal);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.resume:hover {
+  background-color: var(--purple);
+  color: white;
+}
+
+.button {
+  display: flex;
   justify-content: center;
-  margin-top: -75px;
+  padding-top: 2em;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    padding: 0 2em;
+    transition: 0.3s;
+  }
+
+  .header {
+    padding: 5em 0 2em 0;
+  }
+
+  .contentContainer {
+    padding: 2em 0 0 0;
+    flex-wrap: wrap;
+  }
+
+  .textContainer,
+  .skillsContainer {
+    padding: 3em 0 0 0;
+    margin: 0;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .image {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .skillsContainer {
+    padding-bottom: 5em;
+  }
 }
