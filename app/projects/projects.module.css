@@ -1,6 +1,6 @@
 .container {
   padding: 10em 8.2em 10em 8.2em;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .header {
@@ -74,7 +74,7 @@
 
   .contentProject,
   .contentTitle,
-  .header  {
+  .header {
     padding: 0;
   }
 

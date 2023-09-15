@@ -5,12 +5,8 @@ export default function TitleScroll({ className, ...props }) {
   return (
     <div className={classNames(styles.container, className)} {...props}>
       <div className={styles.title}>
-        Jenny Nguyen Öberg —
-        Jenny Nguyen Öberg —
-        Jenny Nguyen Öberg —
-        Jenny Nguyen Öberg —
-        Jenny Nguyen Öberg —
-        Jenny Nguyen Öberg —
+        Jenny Nguyen Öberg — Jenny Nguyen Öberg — Jenny Nguyen Öberg — Jenny
+        Nguyen Öberg — Jenny Nguyen Öberg — Jenny Nguyen Öberg —
       </div>
     </div>
   );

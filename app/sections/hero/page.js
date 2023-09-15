@@ -7,9 +7,12 @@ export default function Hero() {
   return (
     <div className={styles.container}>
       <div className={styles.rowWrapper}>
-        <div className={styles.calloutText}>↳ Looking for an internship starting in</div>
+        <div className={styles.calloutText}>
+          ↳ Looking for an internship starting in
+        </div>
         <SubHeadingRotate>
-          <span>January</span><br />
+          <span>January</span>
+          <br />
           <span>2024</span>
         </SubHeadingRotate>
       </div>

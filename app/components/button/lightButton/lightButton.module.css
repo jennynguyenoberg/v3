@@ -4,14 +4,14 @@
 
 .container {
   cursor: pointer;
-  font-family: 'MaisonNeue-Book', sans-serif;
+  font-family: "MaisonNeue-Book", sans-serif;
   width: 100%;
   height: 75px;
-  line-height: .5em;
+  line-height: 0.5em;
   position: relative;
   overflow: hidden;
   border: 1px solid white;
-  transition: color .5s;
+  transition: color 0.5s;
   z-index: 1;
   font-size: 16px;
   letter-spacing: -0.03em;
@@ -49,4 +49,4 @@
 .container:active:before {
   background: white;
   transition: background 0s;
- }
+}

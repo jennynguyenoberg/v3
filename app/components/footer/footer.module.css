@@ -19,7 +19,7 @@
   display: flex;
   list-style-type: none;
   gap: 18px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .titleScroll {

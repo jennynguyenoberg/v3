@@ -8,7 +8,8 @@ export default function Intro() {
       <div id="intro" className={styles.container}>
         <div className={styles.rowWrapper}>
           <div>
-            <SpanText>{`
+            <SpanText>
+              {`
               Experienced designer & developer student based in 
               beautiful Stockholm, Sweden. Creative at 
               heart with a passion for the details.
@@ -17,8 +18,8 @@ export default function Intro() {
           </div>
           <div className={styles.paraText}>
             <ParagraphText>
-              Combining a creative flair and a knack for
-              visual communication with some technical wizardry.
+              Combining a creative flair and a knack for visual communication
+              with some technical wizardry.
             </ParagraphText>
           </div>
         </div>

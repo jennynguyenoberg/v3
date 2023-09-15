@@ -1,5 +1,5 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 import DarkButton from "@/app/components/button/darkButton/page";
 import ParagraphText from "@/app/components/headings/paragraphText/page";
 import SmallText from "@/app/components/headings/smallText/page";
@@ -7,13 +7,13 @@ import SpanText from "@/app/components/headings/spanText/page";
 import Line from "@/app/components/line/page";
 import styles from "./projects.module.css";
 import data from "@/app/utils/projectsdata";
-import TitleText from '../components/headings/titleText/page';
+import TitleText from "../components/headings/titleText/page";
 
 export default function Projects() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <TitleText >All projects</TitleText>
+        <TitleText>All projects</TitleText>
       </div>
       <div className={styles.contentTitle}>
         <SmallText className={styles.columnOne}>Client</SmallText>
@@ -27,10 +27,18 @@ export default function Projects() {
           {index > 0 && <Line />}
           <div className={styles.contentProject}>
             <Link href={`/projects/${item.id}`} className={styles.link}>
-              <SpanText className={styles.contentClient}>{item.client}</SpanText>
-              <ParagraphText className={styles.contentDel}>{item.deliverables}</ParagraphText>
-              <ParagraphText className={styles.contentLoc}>{item.location}</ParagraphText>
-              <ParagraphText className={styles.contentYear}>{item.year}</ParagraphText>
+              <SpanText className={styles.contentClient}>
+                {item.client}
+              </SpanText>
+              <ParagraphText className={styles.contentDel}>
+                {item.deliverables}
+              </ParagraphText>
+              <ParagraphText className={styles.contentLoc}>
+                {item.location}
+              </ParagraphText>
+              <ParagraphText className={styles.contentYear}>
+                {item.year}
+              </ParagraphText>
             </Link>
           </div>
         </React.Fragment>

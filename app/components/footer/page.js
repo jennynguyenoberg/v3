@@ -1,7 +1,7 @@
-import styles from './footer.module.css';
-import LightLinkItem from '../link/lightLink/page';
-import footerData from '../../utils/footerData';
-import TitleScroll from '../headings/titleScroll/page';
+import styles from "./footer.module.css";
+import LightLinkItem from "../link/lightLink/page";
+import footerData from "../../utils/footerData";
+import TitleScroll from "../headings/titleScroll/page";
 
 export default function Footer() {
   const { links, copyrightText } = footerData;
@@ -18,7 +18,7 @@ export default function Footer() {
             ))}
           </ul>
         </div>
-        
+
         <div>
           <ul className={styles.copyrightText}>
             <li>{copyrightText}</li>

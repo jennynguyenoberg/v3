@@ -1,17 +1,17 @@
-import React from 'react';
-import Link from 'next/link';
-import DarkButton from '@/app/components/button/darkButton/page';
-import ParagraphText from '@/app/components/headings/paragraphText/page';
-import SmallText from '@/app/components/headings/smallText/page';
-import Line from '@/app/components/line/page';
-import styles from '../projectId.module.css';
-import data from '@/app/utils/projectsdata';
-import DarkLinkItem from '@/app/components/link/darkLink/page';
+import React from "react";
+import Link from "next/link";
+import DarkButton from "@/app/components/button/darkButton/page";
+import ParagraphText from "@/app/components/headings/paragraphText/page";
+import SmallText from "@/app/components/headings/smallText/page";
+import Line from "@/app/components/line/page";
+import styles from "../projectId.module.css";
+import data from "@/app/utils/projectsdata";
+import DarkLinkItem from "@/app/components/link/darkLink/page";
 import Image from "next/legacy/image";
-import TitleText from '@/app/components/headings/titleText/page';
+import TitleText from "@/app/components/headings/titleText/page";
 
 export default function ProjectFour() {
-  const projectIdToShow = 'project-four';
+  const projectIdToShow = "project-four";
   const project = data.find((item) => item.id === projectIdToShow);
 
   if (!project) {
@@ -40,12 +40,20 @@ export default function ProjectFour() {
             <ParagraphText>{project.specs}</ParagraphText>
           </div>
           <div className={styles.contentLoc}>
-            <DarkLinkItem href={project.site} target="_blank" rel="noopener noreferrer">
+            <DarkLinkItem
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <ParagraphText>To repo &#8600;</ParagraphText>
             </DarkLinkItem>
           </div>
           <div className={styles.contentSite}>
-            <DarkLinkItem href={project.site} target="_blank" rel="noopener noreferrer">
+            <DarkLinkItem
+              href={project.site}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <ParagraphText>Visit live site &#8600;</ParagraphText>
             </DarkLinkItem>
           </div>
@@ -53,7 +61,9 @@ export default function ProjectFour() {
 
         <div className={styles.brief}>
           <SmallText className={styles.columnFive}>Brief</SmallText>
-          <ParagraphText className={styles.contentBrief}>{project.brief}</ParagraphText>
+          <ParagraphText className={styles.contentBrief}>
+            {project.brief}
+          </ParagraphText>
         </div>
       </div>
       <div className={styles.images}>
