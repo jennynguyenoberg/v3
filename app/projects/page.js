@@ -37,9 +37,9 @@ export default function Projects() {
       ))}
       <Line />
       {/* Archive Button */}
-      <Link href={`/archive`} className={styles.button}>
+      {/* <Link href={`/archive`} className={styles.button}>
         <DarkButton>Archive</DarkButton>
-      </Link>
+      </Link> */}
     </div>
   );
 }
