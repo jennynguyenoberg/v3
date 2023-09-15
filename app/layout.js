@@ -7,9 +7,8 @@ import Contact from "./sections/contact/page";
 import React, { useEffect, useState } from "react";
 
 export default function RootLayout({ children }) {
-  
   const [highlightColor, setHighlightColor] = useState("#8b80e5");
-  
+
   useEffect(() => {
     const colors = ["#8b80e5", "#b7e0e6"];
     const handleMouseDown = () => {
@@ -17,9 +16,9 @@ export default function RootLayout({ children }) {
       setHighlightColor(color);
       colors.push(color);
     };
-  
+
     window.addEventListener("mousedown", handleMouseDown);
-  
+
     return () => {
       window.removeEventListener("mousedown", handleMouseDown);
     };

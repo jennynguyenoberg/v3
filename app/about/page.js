@@ -31,7 +31,8 @@ export default function About() {
             {`
               As your multidisciplinary creative, I offer a range of services to elevate your digital presence. From branding that tells your unique story to eye-catching graphic design that captures attention, I've got the artistic touch you need. Whether you're looking for a fresh web design that's both stylish and functional, or UI/UX design that ensures a seamless user experience, I've got the skills to make it happen. 
           `}
-            <br /><br />
+            <br />
+            <br />
             {`
              And when it comes to bringing your ideas to life, my front-end development expertise ensures your website or app not only looks good but works like a charm. Plus, if you need some custom illustrations to add that extra flair, I'm here to make your vision a reality. Let's make your brand stand out!
           `}
@@ -44,7 +45,7 @@ export default function About() {
             width={1504}
             height={1957}
             className={styles.projectImage}
-            />
+          />
         </div>
       </div>
       <div className={styles.skillsContainer}>
@@ -72,7 +73,15 @@ export default function About() {
           <a
             href="/resume.pdf"
             download="resume.pdf"
-            style={{ width: '300px', height: '300px', display: 'flex', justifyContent: 'center', alignItems: 'center', color: 'inherit', textDecoration: 'none' }}
+            style={{
+              width: "300px",
+              height: "300px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "inherit",
+              textDecoration: "none",
+            }}
           >
             Download resume
           </a>
