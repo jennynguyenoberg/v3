@@ -37,7 +37,13 @@ body {
   --gray: #464646;
   --light-gray: #a7a7a7;
   --border-gray: #d9d9d9;
+  --highlight-color: null;
 }
+
+::selection {
+  background: var(--highlight-color);
+}
+
 
 /* :root {
   --max-width: 1100px;
