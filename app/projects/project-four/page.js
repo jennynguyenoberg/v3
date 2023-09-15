@@ -10,6 +10,11 @@ import DarkLinkItem from "@/app/components/link/darkLink/page";
 import Image from "next/legacy/image";
 import TitleText from "@/app/components/headings/titleText/page";
 
+export const metadata = {
+  title: "Project 4",
+  description: "Project 4 | Jenny Nguyen Öberg",
+};
+
 export default function ProjectFour() {
   const projectIdToShow = "project-four";
   const project = data.find((item) => item.id === projectIdToShow);

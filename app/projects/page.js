@@ -9,6 +9,11 @@ import styles from "./projects.module.css";
 import data from "@/app/utils/projectsdata";
 import TitleText from "../components/headings/titleText/page";
 
+export const metadata = {
+  title: "Projects",
+  description: "Projects | Jenny Nguyen Öberg",
+};
+
 export default function Projects() {
   return (
     <div className={styles.container}>

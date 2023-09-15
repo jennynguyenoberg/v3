@@ -1,16 +1,17 @@
 import React from "react";
 import Link from "next/link";
-// import DarkButton from "@/app/components/button/darkButton/page";
 import ParagraphText from "@/app/components/headings/paragraphText/page";
-// import SmallText from "@/app/components/headings/smallText/page";
 import SpanText from "@/app/components/headings/spanText/page";
 import Line from "@/app/components/line/page";
 import styles from "./about.module.css";
-// import data from "@/app/utils/projectsdata";
 import TitleText from "../components/headings/titleText/page";
 import Image from "next/legacy/image";
 import DarkButton from "../components/button/darkButton/page";
-import DarkLinkItem from "../components/link/darkLink/page";
+
+export const metadata = {
+  title: "About",
+  description: "About me | Jenny Nguyen Öberg",
+};
 
 export default function About() {
   return (
