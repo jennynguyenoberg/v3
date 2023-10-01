@@ -1,10 +1,10 @@
 const projectsData = [
   {
-    id: "project-one",
+    id: "the-workshop",
     images: [
       {
-        url: "/images/image1.jpg",
-        alt: "Image 1 Alt Text",
+        url: "/images/the-workshop.png",
+        alt: "Screenshot of The Workshop website",
       },
       {
         url: "/images/image1.jpg",
@@ -20,13 +20,13 @@ const projectsData = [
     role: "Designer",
     year: "2023",
     location: "Stockholm",
-    deliverables: "Development",
-    client: "Project 1",
+    deliverables: "Design & Development",
+    client: "The Workshop",
     specs: "React.js",
-    site: "https://jennynguyenoberg.com",
-    github: "https://jennynguyenoberg.com",
+    site: "https://the-workshop-rho.vercel.app/",
+    github: "https://github.com/jennynguyenoberg/the-workshop",
     brief:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie ac feugiat sed lectus vestibulum. Faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Quis viverra nibh cras pulvinar mattis.",
+      "This project is a simple web application built with TypeScript, Styled Components, and React Hooks (useState and useEffect). It serves as a template for creating a (non-functional) e-commerce website with these technologies.",
   },
   {
     id: "project-two",

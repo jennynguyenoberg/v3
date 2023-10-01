@@ -11,12 +11,12 @@ import Image from "next/legacy/image";
 import TitleText from "@/app/components/headings/titleText/page";
 
 export const metadata = {
-  title: "Project 1",
-  description: "Project 1 | Jenny Nguyen Öberg",
+  title: "The Workshop",
+  description: "The Workshop | Jenny Nguyen Öberg",
 };
 
 export default function ProjectOne() {
-  const projectIdToShow = "project-one";
+  const projectIdToShow = "the-workshop";
   const project = data.find((item) => item.id === projectIdToShow);
 
   if (!project) {
@@ -65,7 +65,7 @@ export default function ProjectOne() {
         </div>
 
         <div className={styles.brief}>
-          <SmallText className={styles.columnFive}>Brief</SmallText>
+          <SmallText className={styles.columnFive}>Description</SmallText>
           <ParagraphText className={styles.contentBrief}>
             {project.brief}
           </ParagraphText>
