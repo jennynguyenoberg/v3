@@ -6,7 +6,7 @@ import SmallText from "@/app/components/headings/smallText/page";
 import SpanText from "@/app/components/headings/spanText/page";
 import Line from "@/app/components/line/page";
 import styles from "./projects.module.css";
-import data from "@/app/utils/projectsdata";
+import data from "@/app/data/projectsdata";
 import TitleText from "../components/headings/titleText/page";
 
 export const metadata = {

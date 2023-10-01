@@ -5,7 +5,7 @@ import ParagraphText from "@/app/components/headings/paragraphText/page";
 import SmallText from "@/app/components/headings/smallText/page";
 import Line from "@/app/components/line/page";
 import styles from "../projectId.module.css";
-import data from "@/app/utils/projectsdata";
+import data from "@/app/data/projectsdata";
 import DarkLinkItem from "@/app/components/link/darkLink/page";
 import Image from "next/legacy/image";
 import TitleText from "@/app/components/headings/titleText/page";
