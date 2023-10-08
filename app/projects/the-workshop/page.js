@@ -77,8 +77,8 @@ export default function ProjectOne() {
             <Image
               src={image.url}
               alt={image.alt}
-              width={718}
-              height={378}
+              width={533}
+              height={358}
               layout="responsive"
             />
           </div>

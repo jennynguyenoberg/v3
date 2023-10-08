@@ -40,7 +40,7 @@ export default function About() {
         </div>
         <div className={styles.image}>
           <Image
-            src="/images/profile.png"
+            src="/images/profile.jpg"
             alt="Profile Picture"
             width={1504}
             height={1957}
