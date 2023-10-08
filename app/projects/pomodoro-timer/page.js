@@ -11,12 +11,12 @@ import Image from "next/legacy/image";
 import TitleText from "@/app/components/headings/titleText/page";
 
 export const metadata = {
-  title: "Project 3",
-  description: "Project 3 | Jenny Nguyen Öberg",
+  title: "Pomodoro Timer",
+  description: "Pomodoro Timer | Jenny Nguyen Öberg",
 };
 
 export default function ProjectThree() {
-  const projectIdToShow = "project-three";
+  const projectIdToShow = "pomodoro-timer";
   const project = data.find((item) => item.id === projectIdToShow);
 
   if (!project) {
@@ -77,14 +77,14 @@ export default function ProjectThree() {
             <Image
               src={image.url}
               alt={image.alt}
-              width={718}
-              height={378}
+              width={533}
+              height={358}
               layout="responsive"
             />
           </div>
         ))}
       </div>
-      <Link href={`/projects/project-four`} className={styles.button}>
+      <Link href={`/projects/harry-potter-api`} className={styles.button}>
         <DarkButton>Next project</DarkButton>
       </Link>
     </>

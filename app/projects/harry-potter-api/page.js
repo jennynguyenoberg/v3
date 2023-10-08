@@ -11,12 +11,12 @@ import Image from "next/legacy/image";
 import TitleText from "@/app/components/headings/titleText/page";
 
 export const metadata = {
-  title: "Project 4",
-  description: "Project 4 | Jenny Nguyen Öberg",
+  title: "Harry Potter API",
+  description: "Harry Potter API | Jenny Nguyen Öberg",
 };
 
 export default function ProjectFour() {
-  const projectIdToShow = "project-four";
+  const projectIdToShow = "harry-potter-api";
   const project = data.find((item) => item.id === projectIdToShow);
 
   if (!project) {
@@ -77,14 +77,14 @@ export default function ProjectFour() {
             <Image
               src={image.url}
               alt={image.alt}
-              width={718}
-              height={378}
+              width={533}
+              height={358}
               layout="responsive"
             />
           </div>
         ))}
       </div>
-      <Link href={`/projects/project-one`} className={styles.button}>
+      <Link href={`/projects/the-workshop`} className={styles.button}>
         <DarkButton>Next project</DarkButton>
       </Link>
     </>

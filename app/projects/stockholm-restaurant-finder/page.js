@@ -84,7 +84,7 @@ export default function ProjectTwo() {
           </div>
         ))}
       </div>
-      <Link href={`/projects/project-three`} className={styles.button}>
+      <Link href={`/projects/pomodoro-timer`} className={styles.button}>
         <DarkButton>Next project</DarkButton>
       </Link>
     </>
