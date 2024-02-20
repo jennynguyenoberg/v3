@@ -1,11 +1,86 @@
 const projectsData = [
   {
-    id: "the-workshop",
+    id: "about-consulting",
     images: [
       {
-        url: "/images/the-workshop-mockup.jpg",
-        alt: "Screenshot of The Workshop website",
+        url: "/images/about-consulting.jpg",
+        alt: "Screenshot of About Consulting website",
       },
+      // {
+      //   url: "/images/the-workshop.jpg",
+      //   alt: "Image 2 Alt Text",
+      // }
+    ],
+    heading: "Heading 1",
+    subheading: "Subheading 1",
+    role: "Designer & Developer",
+    year: "2024",
+    location: "Stockholm",
+    deliverables: "Design & Development",
+    client: "About Consulting",
+    specs: "GSAP, Framer Motion",
+    site: "https://aboutconsulting.se/",
+    github: "https://github.com/jennynguyenoberg/about-consulting",
+    brief:
+      "This is my Master Thesis where I explore Typescript, Tailwind CSS and a variety of animation techniques, such as Framer Motion, GSAP and Locomotive Scroll.",
+  },
+  {
+    id: "ideaspire",
+    images: [
+      {
+        url: "/images/ideaspire.png",
+        alt: "Laptop mockup of The Ideaspire website",
+      },
+      // {
+      //   url: "/images/the-workshop.jpg",
+      //   alt: "Image 2 Alt Text",
+      // }
+    ],
+    heading: "Heading 1",
+    subheading: "Subheading 1",
+    role: "Designer & Developer",
+    year: "2024",
+    location: "Stockholm",
+    deliverables: "Design & Development",
+    client: "Ideaspire",
+    specs: "CSS",
+    site: "https://creative-brief-generator.vercel.app/",
+    github: "https://github.com/jennynguyenoberg/creative-brief-generator",
+    brief:
+      "The Creative Ideas Generator is a simple web application that allows you to choose an industry and category, and it will provide you with a random idea related to that combination. It's designed to help professionals, creators, and coders find unique concepts for their up coming projects or assignments.",
+  },
+  {
+    id: "color-contrast-checker",
+    images: [
+      {
+        url: "/images/color-contrast-checker.jpg",
+        alt: "Screenshot of Color Contrast Checker website",
+      },
+      // {
+      //   url: "/images/the-workshop.jpg",
+      //   alt: "Image 2 Alt Text",
+      // }
+    ],
+    heading: "Heading 1",
+    subheading: "Subheading 1",
+    role: "Designer & Developer",
+    year: "2024",
+    location: "Stockholm",
+    deliverables: "Design & Development",
+    client: "Color Contrast Checker",
+    specs: "Tailwind CSS",
+    site: "https://color-checker-tdd.vercel.app/",
+    github: "https://github.com/jennynguyenoberg/color-checker-TDD",
+    brief:
+      "This Color Contrast Checker is a web application designed to evaluate the color contrast between two chosen colors. It aims to provide users with feedback on whether the contrast ratio meets accessibility standards (a grade based on WCAG standards), making it easy for users with visual impairments to perceive content.",
+  },
+  {
+    id: "the-workshop",
+    images: [
+      // {
+      //   url: "/images/the-workshop-mockup.jpg",
+      //   alt: "Screenshot of The Workshop website",
+      // },
       {
         url: "/images/the-workshop.jpg",
         alt: "Image 2 Alt Text",

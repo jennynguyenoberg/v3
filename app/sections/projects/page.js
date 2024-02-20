@@ -9,13 +9,15 @@ import SmallText from "@/app/components/headings/smallText/page";
 import DarkButton from "@/app/components/button/darkButton/page";
 
 export default function Projects() {
+  const firstFourItems = data.slice(0, 4); // Selecting only the first 4 items
+
   return (
     <div className={styles.container}>
       <div className={styles.subContainer}>
         <SmallText>Selected work</SmallText>
       </div>
       <div className={styles.items}>
-        {data.map((item) => {
+        {firstFourItems.map((item) => {
           const firstImage = item.images.find(() => true);
           return (
             <div key={item.id} className={styles.projectItem}>

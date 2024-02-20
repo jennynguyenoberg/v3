@@ -21,7 +21,7 @@ export default function Projects() {
         <TitleText>All projects</TitleText>
       </div>
       <div className={styles.contentTitle}>
-        <SmallText className={styles.columnOne}>Client</SmallText>
+        <SmallText className={styles.columnOne}>Project</SmallText>
         <SmallText className={styles.columnTwo}>Deliverables</SmallText>
         <SmallText className={styles.columnThree}>Location</SmallText>
         <SmallText className={styles.columnFour}>Year</SmallText>
