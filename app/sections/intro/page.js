@@ -10,7 +10,7 @@ export default function Intro() {
           <div>
             <SpanText>
               {`
-              Experienced designer & developer student based in 
+              Experienced designer & developer based in 
               beautiful Stockholm, Sweden. Creative at 
               heart with a passion for the details.
               `}
